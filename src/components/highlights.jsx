@@ -20,7 +20,8 @@ const Highlights = () => {
       <div class="highlight-icon">
         <i class="fas fa-network-wired"></i>
       </div>
-      <h1 className="text-dark fs-1">V</h1>
+      <h1 className="text-dark mb-3">V</h1>
+      <p className="text-dark"><span className='fs-4'>18,000 Sq.ft</span><br></br> Clubhouse</p>
     </div>
   </div>
 
@@ -29,7 +30,8 @@ const Highlights = () => {
       <div class="highlight-icon">
         <i class="fas fa-rocket"></i>
       </div>
-      <h1 className="text-dark fs-1">A</h1>
+      <h1 className="text-dark mb-3">A</h1>
+      <p className="text-dark"><span className='fs-4'>32 Acres </span><br></br>of Land </p>
     </div>
   </div>
 
@@ -38,7 +40,8 @@ const Highlights = () => {
       <div class="highlight-icon">
         <i class="fas fa-users"></i>
       </div>
-      <h1 className="text-dark fs-1">R</h1>
+      <h1 className="text-dark mb-3">R</h1>
+      <p className="text-dark"><span className='fs-4'>600 - 2400</span><br></br> sq. ft. Plot Range </p>
     </div>
   </div>
 
@@ -48,6 +51,7 @@ const Highlights = () => {
         <i class="fas fa-users"></i>
       </div>
       <h1 className="text-dark fs-1">A</h1>
+      <p className="text-dark"><span className='fs-4'>550</span><br></br> Villa Plots</p>
     </div>
   </div>
 
@@ -57,6 +61,7 @@ const Highlights = () => {
         <i class="fas fa-users"></i>
       </div>
       <h1 className="text-dark fs-1">M</h1>
+      <p className="text-dark"><span className='fs-4'>100+</span><br></br> Lifestyle Amenities</p>
     </div>
   </div>
 </div>

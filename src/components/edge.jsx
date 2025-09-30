@@ -4,10 +4,22 @@ import Image2 from "../assets/images/edge-img2.jpeg";
 import Brocure from "../assets/images/brocure/brocure_varam.pdf";
 
 function EdgeSection() {
+  const handleSubmit = (e) => {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+  const payload = {
+    name: formData.get("name"),
+    phone: formData.get("phone"),
+    email: formData.get("email"),
+  };
+  console.log(payload); 
+  alert("form submitted!)");
+    e.target.reset();
+};
   return (
     <section id="edge" className="edge-section">
       <div className="container">
-        <div
+        {/* <div
           class="row key-facts"
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -37,10 +49,10 @@ function EdgeSection() {
               <p>Clubhouse</p>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="row contact-section">
           <h2
-            className="section-title-normal text-center"
+            className="section-title-normal text-center mt-5"
             data-aos="fade-left"
             data-aos-duration="1000"
           >
@@ -49,24 +61,41 @@ function EdgeSection() {
           <p class="text-center" data-aos="fade-left" data-aos-duration="1000">
             Coming Soon - Get in touch for more information
           </p>
-          <div
-            class="row m-0 mt-2 mt-lg-5"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <div class="col-12 mb-2 mb-lg-0 col-lg-3">
-              <input type="text" placeholder="Enter Name" />
+          <form onSubmit={handleSubmit}>
+            <div
+              className="row m-0 mt-2 mt-lg-5"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div className="col-12 mb-2 mb-lg-0 col-lg-3">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter Name"
+                  required
+                />
+              </div>
+              <div className="col-12 mb-2 mb-lg-0 col-lg-3">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Enter Phone Number"
+                  required
+                />
+              </div>
+              <div className="col-12 mb-2 mb-lg-0 col-lg-3">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter Email"
+                  required
+                />
+              </div>
+              <div className="col-12 mb-2 mb-lg-0 col-lg-3">
+                <button type="submit">Book a Free Site Visit</button>
+              </div>
             </div>
-            <div class="col-12 mb-2 mb-lg-0 col-lg-3">
-              <input type="text" placeholder="Enter Phone Number" />
-            </div>
-            <div class="col-12 mb-2 mb-lg-0 col-lg-3">
-              <input type="email" placeholder="Enter Email" />
-            </div>
-            <div class="col-12 mb-2 mb-lg-0 col-lg-3">
-              <button type="text">Book a Free Site Visit</button>
-            </div>
-          </div>
+          </form>
         </div>
         <div className="row align-items-center edge-row">
           {/* Left Image Cards - Updated Structure */}

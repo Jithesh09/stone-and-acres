@@ -7,6 +7,8 @@ import Highlights from "../components/highlights";
 import ProximitySection from "../components/proximity";
 import GallerySection from "../components/gallery";
 import Layout from "../components/layout";
+import Footer from "../components/footer";
+import HomePagePopupForm from "../components/homepage-popup";
 
 function Home() {
   return (
@@ -19,6 +21,8 @@ function Home() {
       <ProximitySection/>
       <Layout/>
       <GallerySection/>
+      <Footer/>
+      <HomePagePopupForm/>
     </>
   );
 }

@@ -46,8 +46,7 @@ const ProximitySection = () => {
                   className={`accordion-collapse collapse ${activeAccordion === "worksites" ? "show" : ""}`}
                 >
                   <div className="accordion-body">
-                    Sample text about worksites.<br />
-                    More details will be displayed on the right.
+                    Offers a quick commute to major industrial and IT hubs-Oragadam SIPCOT Industrial Park.
                   </div>
                 </div>
               </div>
@@ -68,8 +67,8 @@ const ProximitySection = () => {
                   className={`accordion-collapse collapse ${activeAccordion === "colleges" ? "show" : ""}`}
                 >
                   <div className="accordion-body">
-                    Sample text about colleges.<br />
-                    More details will be displayed on the right.
+                    Provides easy access to renowned educational institutions such as SRM and Hindustan Institute of Engineering Technology.
+
                   </div>
                 </div>
               </div>
@@ -90,8 +89,7 @@ const ProximitySection = () => {
                   className={`accordion-collapse collapse ${activeAccordion === "schools" ? "show" : ""}`}
                 >
                   <div className="accordion-body">
-                    Sample text about schools.<br />
-                    More details will be displayed on the right.
+                    Close proximity to reputed schools, ensuring quality education is conveniently nearby.
                   </div>
                 </div>
               </div>
@@ -112,8 +110,7 @@ const ProximitySection = () => {
                   className={`accordion-collapse collapse ${activeAccordion === "entertainment" ? "show" : ""}`}
                 >
                   <div className="accordion-body">
-                    Sample text about entertainment.<br />
-                    More details will be displayed on the right.
+                    Well-connected to diverse recreational options, including hotels, malls and theaters closeby.
                   </div>
                 </div>
               </div>
@@ -134,8 +131,7 @@ const ProximitySection = () => {
                   className={`accordion-collapse collapse ${activeAccordion === "commute" ? "show" : ""}`}
                 >
                   <div className="accordion-body">
-                    Sample text about commute.<br />
-                    More details will be displayed on the right.
+                    Seamless connectivity via the Tambaram Railway Station and the Padappai Flyover for swift travel.
                   </div>
                 </div>
               </div>
