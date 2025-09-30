@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom row */}
-        <div className="row border-top pt-3 mt-4">
+        <div id="contact" className="row border-top pt-3 mt-4">
           <div className="col-md-6 text-center text-md-start mb-2 mb-md-0">
             <button
               onClick={handleShow}
@@ -99,7 +99,7 @@ const Footer = () => {
             </button>
           </div>
           <div className="col-md-6 text-center text-md-end">
-            <small>© {new Date().getFullYear()} Codename Varam.</small><br></br>
+            <small>© {new Date().getFullYear()} Code Name Varam.</small><br></br>
             <small>Powered By ATWIAS</small>
           </div>
         </div>
