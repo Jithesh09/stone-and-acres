@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
+import { handleSubmit } from "/stone and acres/src/handlesubit";
 
 const HomePagePopupForm = () => {
   const [showForm, setShowForm] = useState(false);
@@ -7,64 +8,71 @@ const HomePagePopupForm = () => {
   const handleClose = () => setShowForm(false);
   const handleShow = () => setShowForm(true);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const formData = new FormData(e.target);
-    const payload = {
-      name: formData.get("name"),
-      phone: formData.get("phone"),
-      email: formData.get("email"),
-    };
-
-    console.log("Payload:", payload);
-    alert("form submitted!)");
-    e.target.reset();
-    handleClose();
-  };
-
   return (
     <>
       {/* Responsive Floating Contact Button */}
-      <div
-      className="fixed-contact"
-        onClick={handleShow}
-        style={{
-          position: "fixed",
-          top: "50%",
-          left: 0,
-          transform: "translateY(-50%) rotate(-90deg)",
-          transformOrigin: "left top",
-          backgroundColor: "var(--header-title)",
-          color: "white",
-          padding: "10px 20px",
-          borderRadius: "0 0 8px 8px",
-          cursor: "pointer",
-          fontWeight: "bold",
-          zIndex: 1000,
-          textAlign: "center",
-        }}
-      >
-        Contact Us
-      </div>
+      {/* Floating Contact Button (Desktop) */}
+<div
+  onClick={handleShow}
+  className="fixed-contact d-none d-md-block"
+  style={{
+    position: "fixed",
+    top: "50%",
+    left: 0,
+    transform: "translateY(-50%) rotate(-90deg)",
+    transformOrigin: "left top",
+    backgroundColor: "var(--header-title)",
+    color: "white",
+    padding: "10px 20px",
+    borderRadius: "0 0 8px 8px",
+    cursor: "pointer",
+    fontWeight: "bold",
+    zIndex: 1000,
+  }}
+>
+  Contact Us
+</div>
 
-      {/* Adjust button position for mobile using media query */}
-      <style>
-        {`
-          @media (max-width: 768px) {
-            .fixed-contact {
-        top: auto !important;
-        left: 0 !important;
-        right: 0 !important;
-        bottom: 0 !important;
-        width: 100% !important;
-        transform: none !important;
-        border-radius: 8px 8px 0 0 !important;
-        padding: 15px !important;
-            }
-          }
-        `}
-      </style>
+{/* Mobile Buttons (Only visible on mobile) */}
+<div
+  className="fixed-contact-mobile d-flex d-md-none"
+  style={{
+    position: "fixed",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    backgroundColor: "#fff",
+    zIndex: 1000,
+  }}
+>
+  <button
+    onClick={handleShow}
+    style={{
+      flex: 1,
+      backgroundColor: "var(--header-title)",
+      color: "#fff",
+      padding: "15px",
+      border: "none",
+      fontWeight: "bold",
+    }}
+  >
+    Enquire
+  </button>
+  <a
+    href="tel:+918438598947"
+    style={{
+      flex: 1,
+      backgroundColor: "#495259",
+      color: "#fff",
+      padding: "15px",
+      textAlign: "center",
+      textDecoration: "none",
+      fontWeight: "bold",
+    }}
+  >
+    Call
+  </a>
+</div>
 
       {/* Modal Popup Form */}
       <Modal show={showForm} onHide={handleClose} centered>

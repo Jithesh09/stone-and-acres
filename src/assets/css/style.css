@@ -132,11 +132,17 @@ body {
   background: linear-gradient(135deg,
       var(--primary-color) 0%,
       var(--border-color) 100%);
-  background-image: url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80");
+  background-image: url("../../../src/assets/images/banner/varamHero.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   z-index: -2;
+}
+
+@media screen and (max-width:768px) {
+  .hero-background {
+    background-image: url("../../../src/assets/images/banner/varamheroMobile.jpg");
+  }
 }
 
 .hero-overlay {
@@ -800,9 +806,9 @@ body {
   padding: 15px;
 }
 
-.category-card:hover .review-overlay {
+/* .category-card:hover .review-overlay {
   opacity: 1;
-}
+} */
 
 /* Highlights---------------------------- */
 .highlights-section {

@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         {/* Home Page */}
-        <Route path="/varam" element={<Home />} />
+        <Route path="/" element={<Home />} />
 
         {/* Catch-all route: redirect wrong URLs to Home */}
         <Route path="*" element={<Navigate to="/" replace />} />

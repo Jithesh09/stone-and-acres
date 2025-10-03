@@ -2,20 +2,10 @@ import React from "react";
 import Image1 from "../assets/images/edge-img1.jpeg";
 import Image2 from "../assets/images/edge-img2.jpeg";
 import Brocure from "../assets/images/brocure/brocure_varam.pdf";
+import { handleSubmit } from "/stone and acres/src/handlesubit";
 
 function EdgeSection() {
-  const handleSubmit = (e) => {
-  e.preventDefault();
-  const formData = new FormData(e.target);
-  const payload = {
-    name: formData.get("name"),
-    phone: formData.get("phone"),
-    email: formData.get("email"),
-  };
-  console.log(payload); 
-  alert("form submitted!)");
-    e.target.reset();
-};
+
   return (
     <section id="edge" className="edge-section">
       <div className="container">
@@ -59,7 +49,7 @@ function EdgeSection() {
             Enquire Now
           </h2>
           <p class="text-center" data-aos="fade-left" data-aos-duration="1000">
-            Coming Soon - Get in touch for more information
+           Get in touch for more information
           </p>
           <form onSubmit={handleSubmit}>
             <div

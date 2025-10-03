@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa"; // icons
+import { handleSubmit } from "/stone and acres/src/handlesubit";
 
 const Footer = () => {
   const [showPolicy, setShowPolicy] = useState(false);
@@ -8,18 +9,18 @@ const Footer = () => {
   const handleClose = () => setShowPolicy(false);
   const handleShow = () => setShowPolicy(true);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-    const payload = {
-      name: formData.get("name"),
-      phone: formData.get("phone"),
-      email: formData.get("email"),
-    };
-    console.log("Payload:", payload);
-    alert("form submitted!)");
-    e.target.reset();
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const formData = new FormData(e.target);
+  //   const payload = {
+  //     name: formData.get("name"),
+  //     phone: formData.get("phone"),
+  //     email: formData.get("email"),
+  //   };
+  //   console.log("Payload:", payload);
+  //   alert("form submitted!)");
+  //   e.target.reset();
+  // };
 
   return (
     <footer className="bg-dark text-light pt-5 pb-3">

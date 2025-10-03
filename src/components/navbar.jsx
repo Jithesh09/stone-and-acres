@@ -156,10 +156,10 @@ function Navbar() {
           <div className="navbar-nav">
             <a className="nav-link custom-link" href="/">Home</a>
             <a className="nav-link custom-link" href="/edge"
-            onClick={(e) => handleNavClick(e, "edge", "/edge")}>Edge</a>
-            <a className="nav-link custom-link" href="/amenities" onClick={(e) => handleNavClick(e, "amenities", "/amenities")}>Amenities</a>
+            onClick={(e) => handleNavClick(e, "edge", "/varam/edge")}>Edge</a>
+            <a className="nav-link custom-link" href="/amenities" onClick={(e) => handleNavClick(e, "amenities", "/varam/amenities")}>Amenities</a>
             <a className="nav-link custom-link" href="/highlights"
-            onClick={(e) => handleNavClick(e, "highlights", "/highlights")}>Highlights</a>
+            onClick={(e) => handleNavClick(e, "highlights", "/varam/highlights")}>Highlights</a>
           </div>
 
           {/* Center Logo */}
@@ -173,11 +173,11 @@ function Navbar() {
 
           {/* Right */}
           <div className="navbar-nav">
-            <a className="nav-link custom-link" href="/proximity" onClick={(e) => handleNavClick(e, "proximity", "/proximity")}>Proximity</a>
+            <a className="nav-link custom-link" href="/proximity" onClick={(e) => handleNavClick(e, "proximity", "/varam/proximity")}>Proximity</a>
             <a className="nav-link custom-link" href="/layout"
             onClick={(e) => handleNavClick(e, "layout", "/layout")}>Layout</a>
-            <a className="nav-link custom-link" href="/gallery" onClick={(e) => handleNavClick(e, "gallery", "/gallery")}>Gallery</a>
-            <a className="nav-link custom-link" href="/contact" onClick={(e) => handleNavClick(e, "contact", "/contact")}>Contact Us</a>
+            <a className="nav-link custom-link" href="/gallery" onClick={(e) => handleNavClick(e, "gallery", "/varam/gallery")}>Gallery</a>
+            <a className="nav-link custom-link" href="/contact" onClick={(e) => handleNavClick(e, "contact", "/varam/contact")}>Contact Us</a>
           </div>
         </div>
       </div>

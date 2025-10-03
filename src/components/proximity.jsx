@@ -146,7 +146,7 @@ const ProximitySection = () => {
             
             {/* Worksites Panel */}
             <div 
-              className={`right-panel text-end ${activeAccordion === "worksites" ? "active" : ""}`} 
+              className={`right-panel text-center text-md-end ${activeAccordion === "worksites" ? "active" : ""}`} 
             //   data-aos="fade-left" 
             //   data-aos-duration="1000"
             >
@@ -164,7 +164,7 @@ const ProximitySection = () => {
 
             {/* Colleges Panel */}
             <div 
-              className={`right-panel text-end ${activeAccordion === "colleges" ? "active" : ""}`} 
+              className={`right-panel text-center text-md-end ${activeAccordion === "colleges" ? "active" : ""}`} 
             //   data-aos="fade-left" 
             //   data-aos-duration="1000"
             >
@@ -183,7 +183,7 @@ const ProximitySection = () => {
 
             {/* Schools Panel */}
             <div 
-              className={`right-panel text-end ${activeAccordion === "schools" ? "active" : ""}`} 
+              className={`right-panel text-center text-md-end ${activeAccordion === "schools" ? "active" : ""}`} 
             //   data-aos="fade-left" 
             //   data-aos-duration="1000"
             >
@@ -201,7 +201,7 @@ const ProximitySection = () => {
 
             {/* Entertainment Panel */}
             <div 
-              className={`right-panel text-end ${activeAccordion === "entertainment" ? "active" : ""}`} 
+              className={`right-panel text-center text-md-end ${activeAccordion === "entertainment" ? "active" : ""}`} 
             //   data-aos="fade-left" 
             //   data-aos-duration="1000"
             >
@@ -220,7 +220,7 @@ const ProximitySection = () => {
 
             {/* Commute Panel */}
             <div 
-              className={`right-panel text-end ${activeAccordion === "commute" ? "active" : ""}`} 
+              className={`right-panel text-center text-md-end ${activeAccordion === "commute" ? "active" : ""}`} 
             //   data-aos="fade-left" 
             //   data-aos-duration="1000"
             >
