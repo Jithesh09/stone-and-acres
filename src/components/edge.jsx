@@ -2,7 +2,7 @@ import React from "react";
 import Image1 from "../assets/images/edge-img1.jpeg";
 import Image2 from "../assets/images/edge-img2.jpeg";
 import Brocure from "../assets/images/brocure/brocure_varam.pdf";
-import { handleSubmit } from "../utils/handleSubmit.js";
+// import { handleSubmit } from "../utils/handleSubmit.js";
 
 function EdgeSection() {
   const handleSubmit = async (e) => {

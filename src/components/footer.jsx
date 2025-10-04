@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa"; // icons
-import { handleSubmit } from "../utils/handleSubmit.js";
+// import { handleSubmit } from "../utils/handleSubmit.js";
 
 const Footer = () => {
   const [showPolicy, setShowPolicy] = useState(false);
