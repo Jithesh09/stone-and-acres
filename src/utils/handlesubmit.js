@@ -1,5 +1,6 @@
 const handleSubmit = async (e) => {
   e.preventDefault();
+  console.log("Form submit triggered");
 
   const formData = new FormData(e.target);
   const payload = {
@@ -7,6 +8,8 @@ const handleSubmit = async (e) => {
     phone: formData.get("phone")?.trim(),
     email: formData.get("email")?.trim(),
   };
+
+  console.log("📦 Payload before sending:", payload);
 
   // --- Validation ---
   if (!payload.name) {
@@ -35,12 +38,11 @@ const handleSubmit = async (e) => {
     });
 
     const result = await response.text();
-    console.log("Server response:", result);
+    console.log("📨 Server response:", result);
     alert("Form submitted successfully!");
     e.target.reset(); // clear form
   } catch (error) {
-    console.error("Error submitting form:", error);
+    console.error("❌ Error submitting form:", error);
     alert("Something went wrong, please try again.");
   }
 };
-

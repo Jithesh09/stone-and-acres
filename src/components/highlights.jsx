@@ -2,63 +2,63 @@ import React from 'react'
 
 const Highlights = () => {
   return (
-    <section id="highlights" class="highlights-section">
-        <div class="container">
-            <div class="row">
+    <section id="highlights" className="highlights-section">
+        <div className="container">
+            <div className="row">
                 {/* <div class="col-12 col-lg-6 d-none d-md-block"></div> */}
-                <div class="col-12 mb-4 text-center" data-aos="fade-left" data-aos-duration="1000">
-                    <h2 class="section-title mb-lg-5 highlights" data-aos="fade-up">
+                <div className="col-12 mb-4 text-center" data-aos="fade-left" data-aos-duration="1000">
+                    <h2 className="section-title mb-lg-5 highlights" data-aos="fade-up">
                         HIGHLIGHTS
                     </h2>
                 </div>
 
             </div>
             {/* <!-- Three Main Highlights --> */}
-           <div class="row g-4 mb-5 justify-content-center">
-  <div class="col-lg text-center" data-aos="fade-up" data-aos-delay="100">
-    <div class="highlight-card">
-      <div class="highlight-icon">
-        <i class="fas fa-network-wired"></i>
+           <div className="row g-4 mb-5 justify-content-center">
+  <div className="col-lg text-center" data-aos="fade-up" data-aos-delay="100">
+    <div className="highlight-card">
+      <div className="highlight-icon">
+        <i className="fas fa-network-wired"></i>
       </div>
       <h1 className="text-dark mb-3">V</h1>
       <p className="text-dark"><span className='fs-4'>18,000 Sq.ft</span><br></br> Clubhouse</p>
     </div>
   </div>
 
-  <div class="col-lg text-center" data-aos="fade-up" data-aos-delay="200">
-    <div class="highlight-card">
-      <div class="highlight-icon">
-        <i class="fas fa-rocket"></i>
+  <div className="col-lg text-center" data-aos="fade-up" data-aos-delay="200">
+    <div className="highlight-card">
+      <div className="highlight-icon">
+        <i className="fas fa-rocket"></i>
       </div>
       <h1 className="text-dark mb-3">A</h1>
       <p className="text-dark"><span className='fs-4'>32 Acres </span><br></br>of Land </p>
     </div>
   </div>
 
-  <div class="col-lg text-center" data-aos="fade-up" data-aos-delay="300">
-    <div class="highlight-card">
-      <div class="highlight-icon">
-        <i class="fas fa-users"></i>
+  <div className="col-lg text-center" data-aos="fade-up" data-aos-delay="300">
+    <div className="highlight-card">
+      <div className="highlight-icon">
+        <i className="fas fa-users"></i>
       </div>
       <h1 className="text-dark mb-3">R</h1>
       <p className="text-dark"><span className='fs-4'>600 - 2400</span><br></br> sq. ft. Plot Range </p>
     </div>
   </div>
 
-  <div class="col-lg text-center" data-aos="fade-up" data-aos-delay="400">
-    <div class="highlight-card">
-      <div class="highlight-icon">
-        <i class="fas fa-users"></i>
+  <div className="col-lg text-center" data-aos="fade-up" data-aos-delay="400">
+    <div className="highlight-card">
+      <div className="highlight-icon">
+        <i className="fas fa-users"></i>
       </div>
       <h1 className="text-dark fs-1">A</h1>
       <p className="text-dark"><span className='fs-4'>550</span><br></br> Villa Plots</p>
     </div>
   </div>
 
-  <div class="col-lg text-center" data-aos="fade-up" data-aos-delay="500">
-    <div class="highlight-card">
-      <div class="highlight-icon">
-        <i class="fas fa-users"></i>
+  <div className="col-lg text-center" data-aos="fade-up" data-aos-delay="500">
+    <div className="highlight-card">
+      <div className="highlight-icon">
+        <i className="fas fa-users"></i>
       </div>
       <h1 className="text-dark fs-1">M</h1>
       <p className="text-dark"><span className='fs-4'>100+</span><br></br> Lifestyle Amenities</p>

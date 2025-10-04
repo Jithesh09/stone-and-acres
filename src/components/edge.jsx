@@ -2,9 +2,54 @@ import React from "react";
 import Image1 from "../assets/images/edge-img1.jpeg";
 import Image2 from "../assets/images/edge-img2.jpeg";
 import Brocure from "../assets/images/brocure/brocure_varam.pdf";
-import { handleSubmit } from "../utils/handlesubmit";
+import { handleSubmit } from "../utils/handleSubmit.js";
 
 function EdgeSection() {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log("Form submit triggered ✅");
+
+    const formData = new FormData(e.target);
+    const payload = {
+      name: formData.get("name")?.trim(),
+      phone: formData.get("phone")?.trim(),
+      email: formData.get("email")?.trim(),
+    };
+
+    console.log("Payload:", payload);
+
+    // Validation
+    if (!payload.name) {
+      alert("Please enter your name");
+      return;
+    }
+    if (!/^[0-9]{10}$/.test(payload.phone)) {
+      alert("Please enter a valid 10-digit phone number");
+      return;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(payload.email)) {
+      alert("Please enter a valid email address");
+      return;
+    }
+
+    try {
+      const response = await fetch("https://stoneandacres.in/sendmail.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const result = await response.text();
+      console.log("Server response:", result);
+      alert("Form submitted successfully!");
+      e.target.reset();
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Something went wrong, please try again.");
+    }
+  };
 
   return (
     <section id="edge" className="edge-section">
@@ -48,7 +93,7 @@ function EdgeSection() {
           >
             Enquire Now
           </h2>
-          <p class="text-center" data-aos="fade-left" data-aos-duration="1000">
+          <p className="text-center" data-aos="fade-left" data-aos-duration="1000">
            Get in touch for more information
           </p>
           <form onSubmit={handleSubmit}>
