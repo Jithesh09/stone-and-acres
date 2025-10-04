@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
-import { handleSubmit } from "/stone and acres/src/handlesubit";
+import { handleSubmit } from "/stone and acres/src/utils/handlesubmit.js";
 
 const HomePagePopupForm = () => {
   const [showForm, setShowForm] = useState(false);
