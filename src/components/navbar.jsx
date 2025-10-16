@@ -100,49 +100,49 @@ function Navbar() {
           <div className="collapse navbar-collapse mt-2" id="mobileNav">
             <ul className="navbar-nav text-center">
               <li className="nav-item">
-                <a className="nav-link custom-link" href="/varam">
+                <a className="nav-link custom-link" href="/">
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="/varam/edge"
-                onClick={(e) => handleNavClick(e, "edge", "/varam/edge")}>
+                <a className="nav-link custom-link" href="/edge"
+                onClick={(e) => handleNavClick(e, "edge", "/edge")}>
                   Edge
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="/varam/amenities"
-                onClick={(e) => handleNavClick(e, "amenities", "/varam/amenities")}>
+                <a className="nav-link custom-link" href="/amenities"
+                onClick={(e) => handleNavClick(e, "amenities", "/amenities")}>
                   Amenities
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="/varam/highlights"
-                onClick={(e) => handleNavClick(e, "highlights", "/varam/highlights")}>
+                <a className="nav-link custom-link" href="/highlights"
+                onClick={(e) => handleNavClick(e, "highlights", "/highlights")}>
                   Highlights
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="/varam/proximity"
-                 onClick={(e) => handleNavClick(e, "proximity", "/varam/proximity")}>
+                <a className="nav-link custom-link" href="/proximity"
+                 onClick={(e) => handleNavClick(e, "proximity", "/proximity")}>
                   Proximity
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="/varam/layout"
-                onClick={(e) => handleNavClick(e, "layout", "/varam/layout")}>
+                <a className="nav-link custom-link" href="/layout"
+                onClick={(e) => handleNavClick(e, "layout", "/layout")}>
                   Layout
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="/varam/gallery"
-                onClick={(e) => handleNavClick(e, "gallery", "/varam/gallery")}>
+                <a className="nav-link custom-link" href="/gallery"
+                onClick={(e) => handleNavClick(e, "gallery", "/gallery")}>
                   Gallery
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="/varam/contact"
-                onClick={(e) => handleNavClick(e, "contact", "/varam/contact")}>
+                <a className="nav-link custom-link" href="/contact"
+                onClick={(e) => handleNavClick(e, "contact", "/contact")}>
                   Contact Us
                 </a>
               </li>
@@ -154,16 +154,16 @@ function Navbar() {
         <div className="d-none d-lg-flex w-100 justify-content-between align-items-center">
           {/* Left */}
           <div className="navbar-nav">
-            <a className="nav-link custom-link" href="/varam">Home</a>
-            <a className="nav-link custom-link" href="/varam/edge"
-            onClick={(e) => handleNavClick(e, "edge", "/varam/edge")}>Edge</a>
-            <a className="nav-link custom-link" href="/varam/amenities" onClick={(e) => handleNavClick(e, "amenities", "/varam/amenities")}>Amenities</a>
-            <a className="nav-link custom-link" href="/varam/highlights"
-            onClick={(e) => handleNavClick(e, "highlights", "/varam/highlights")}>Highlights</a>
+            <a className="nav-link custom-link" href="/">Home</a>
+            <a className="nav-link custom-link" href="/edge"
+            onClick={(e) => handleNavClick(e, "edge", "/edge")}>Edge</a>
+            <a className="nav-link custom-link" href="/amenities" onClick={(e) => handleNavClick(e, "amenities", "/amenities")}>Amenities</a>
+            <a className="nav-link custom-link" href="/highlights"
+            onClick={(e) => handleNavClick(e, "highlights", "/highlights")}>Highlights</a>
           </div>
 
           {/* Center Logo */}
-          <a className="navbar-brand" href="/varam">
+          <a className="navbar-brand" href="/">
             <img
               src={logo}
               alt="Logo"
@@ -173,11 +173,11 @@ function Navbar() {
 
           {/* Right */}
           <div className="navbar-nav">
-            <a className="nav-link custom-link" href="/varam/proximity" onClick={(e) => handleNavClick(e, "proximity", "/varam/proximity")}>Proximity</a>
-            <a className="nav-link custom-link" href="/varam/layout"
+            <a className="nav-link custom-link" href="/proximity" onClick={(e) => handleNavClick(e, "proximity", "/proximity")}>Proximity</a>
+            <a className="nav-link custom-link" href="/layout"
             onClick={(e) => handleNavClick(e, "layout", "/layout")}>Layout</a>
-            <a className="nav-link custom-link" href="/varam/gallery" onClick={(e) => handleNavClick(e, "gallery", "/varam/gallery")}>Gallery</a>
-            <a className="nav-link custom-link" href="/varam/contact" onClick={(e) => handleNavClick(e, "contact", "/varam/contact")}>Contact Us</a>
+            <a className="nav-link custom-link" href="/gallery" onClick={(e) => handleNavClick(e, "gallery", "/gallery")}>Gallery</a>
+            <a className="nav-link custom-link" href="/contact" onClick={(e) => handleNavClick(e, "contact", "/contact")}>Contact Us</a>
           </div>
         </div>
       </div>

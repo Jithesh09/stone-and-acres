@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- <base href="https://stoneandacres.in/varam/"> -->
+    <base href="https://chainandlinks.com/">
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -41,4 +41,42 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+
+  <script>
+                var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?81517';
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = url;
+                var options = {
+                "enabled":true,
+                "chatButtonSetting":{
+                    "backgroundColor":"#00e785",
+                    "ctaText":"Chat with us",
+                    "borderRadius":"25",
+                    "marginLeft": "0",
+                    "marginRight": "20",
+                    "marginBottom": "20",
+                    "ctaIconWATI":false,
+                    "position":"right"
+                },
+                "brandSetting":{
+                    "brandName":"Stone&Acres Varam",
+                    "brandSubTitle":"undefined",
+                    "brandImg":"https://chainandlinks.com/#hero",
+                    "welcomeText":"Welcome to Code Name Varam!!",
+                    "messageText":"I'm interested in Code Name Varam Project!!",
+                    "backgroundColor":"#00e785",
+                    "ctaText":"Chat with us",
+                    "borderRadius":"25",
+                    "autoShow":true,
+                    "phoneNumber":"918438598947"
+                }
+                };
+                s.onload = function() {
+                    CreateWhatsappChatWidget(options);
+                };
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            </script>
 </html>
