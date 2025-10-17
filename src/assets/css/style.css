@@ -142,6 +142,7 @@ body {
 @media screen and (max-width:768px) {
   .hero-background {
     background-image: url("../../../src/assets/images/banner/varamheroMobile.jpg");
+    background-attachment: local;
   }
 }
 
