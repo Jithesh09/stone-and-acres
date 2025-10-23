@@ -33,7 +33,7 @@ function EdgeSection() {
     }
 
     try {
-      const response = await fetch("https://stoneandacres.in/sendmail.php", {
+      const response = await fetch("https://chainandlinks.com/sendmail.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -165,9 +165,9 @@ function EdgeSection() {
             data-aos="fade-left"
             data-aos-duration="1000"
           >
-            <h2 className="section-title" data-aos="fade-up">
-              THE EDGE
-            </h2>
+            <h1 className="edge-title" data-aos="fade-up">
+              VARAM - Villa Plots in Padappai
+            </h1>
             <p className="edge-description" data-aos="fade-up">
               Varam is an integrated 32-acre community crafted for families who
               aspire to live amidst growth, convenience, and comfort. With 550

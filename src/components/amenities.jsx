@@ -235,8 +235,8 @@ const Amenities = () => {
   );
 
   return (
-    <section className="shop-by-category-container px-2 px-md-5" id="amenities">
-      <div className="row">
+    <section className="shop-by-category-container px-2 px-md-5 " id="amenities">
+      <div className="row mb-4">
         <h2 className="section-title-normal text-center" data-aos="fade-left" data-aos-duration="1000">Amenities</h2>
       </div>
       <div id="shopByCategorySlider" className="category-slider" data-aos="fade-up" data-aos-duration="1000">

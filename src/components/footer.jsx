@@ -77,10 +77,11 @@ const Footer = () => {
             <div className="footerAddress mb-4">
               <h4 className="mb-3">Our Address</h4>
               <p>
-                STONE AND ACRES REALTY CONSULTANTS LLP,<br />
-                78/2(138/2), L.B Road,<br />
-                Thiruvanmiyur,<br />
-                Chennai - 600041.
+                VXFM+4Q6, Tambaram - Mudichur, <br /> 
+                 Walajabad Rd, Mahanyam R.F,<br />
+                Chennai - 601301,<br />
+                 Tamil Nadu
+                
               </p>
             </div>
 
