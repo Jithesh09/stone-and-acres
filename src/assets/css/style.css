@@ -323,9 +323,9 @@ body {
 .edge-title{
 font-family: "Playfair Display", serif;
   font-weight: 500;
-  font-size: 2.8rem;
+  font-size: 2rem;
   line-height: 0.82;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 2rem;
   color: var(--header-title);
@@ -479,24 +479,7 @@ font-family: "Playfair Display", serif;
     text-align: center;
   }
 
-  .edge-title{
-    font-family: "Playfair Display", serif;
-  font-weight: 500;
-  font-size: 3rem;
-  line-height: 0.82;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  color: var(--header-title);
-  position: relative;
-  /* required for ::after */
-  display: inline-block;
-  /* so the line starts after text */
-  margin-bottom: 2rem;
-  padding-right: 0.5rem;
-  /* small gap */
-  z-index: 2;
-  }
+
 
   .section-title {
     font-size: 2.5rem;

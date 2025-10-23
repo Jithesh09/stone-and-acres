@@ -171,7 +171,7 @@ function EdgeSection() {
             <p className="edge-description" data-aos="fade-up">
               Varam is an integrated 32-acre community crafted for families who
               aspire to live amidst growth, convenience, and comfort. With 550
-              premium plots, a world-class 18,000 sqft. clubhouse, and 25+
+              premium plots, a world-class 18,000 sqft. clubhouse, and 100+
               lifestyle amenities, Varam redefines modern plotted living in
               Chennai's booming Padappai corridor.
             </p>
