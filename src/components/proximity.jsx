@@ -226,9 +226,6 @@ const ProximitySection = () => {
                         <h5>Proposed Upcoming Commute</h5>
                         <ul>
                           <li>
-                            <span>Tambaram Railway Station </span> - 10 Mins
-                          </li>
-                          <li>
                             <span>Kilambakkam Electric Railway Station </span> -
                             8 Mins
                           </li>
@@ -459,9 +456,6 @@ const ProximitySection = () => {
                 </ul>
                 <h5>Proposed Upcoming Commute</h5>
                 <ul>
-                  <li>
-                    <span>Tambaram Railway Station </span> - 10 Mins
-                  </li>
                   <li>
                     <span>Kilambakkam Electric Railway Station </span> - 8 Mins
                   </li>

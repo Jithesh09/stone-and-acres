@@ -754,6 +754,27 @@ font-family: "Playfair Display", serif;
 }
 
 @media (max-width: 768px) {
+
+  .category-slider::-webkit-scrollbar {
+  height: 6px; /* scrollbar thickness */
+}
+
+.category-slider::-webkit-scrollbar-thumb {
+  background: #1ec0e5; /* scrollbar color */
+  border-radius: 10px;
+}
+
+.category-slider::-webkit-scrollbar-track {
+  background: var(--accent-gold); /* scrollbar track color */
+}
+
+  .category-slider {
+    scrollbar-gutter: stable; /* keeps space for scrollbar */
+    overflow-x: scroll;
+  }
+  .category-slider::-webkit-scrollbar {
+    display: block; /* ensures it's not hidden */
+  }
   .shop-by-category-container .category-slider {
     gap: 10px;
   }
