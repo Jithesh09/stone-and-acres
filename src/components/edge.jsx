@@ -2,9 +2,11 @@ import React from "react";
 import Image1 from "../assets/images/edge-img1.jpeg";
 import Image2 from "../assets/images/edge-img2.jpeg";
 import Brocure from "../assets/images/brocure/brocure_varam.pdf";
+import { useNavigate } from "react-router-dom";
 // import { handleSubmit } from "../utils/handleSubmit.js";
 
 function EdgeSection() {
+  const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Form submit triggered ✅");
@@ -43,12 +45,16 @@ function EdgeSection() {
 
       const result = await response.text();
       console.log("Server response:", result);
-      alert("Form submitted successfully!");
-      e.target.reset();
+      if(result.ok){
+      navigate("/thank-you");
+    }else{
+      navigate("/thank-you");
+    }
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("Something went wrong, please try again.");
     }
+
   };
 
   return (
@@ -170,7 +176,7 @@ function EdgeSection() {
             </h1>
             <p className="edge-description" data-aos="fade-up">
               Varam is an integrated 32-acre community crafted for families who
-              aspire to live amidst growth, convenience, and comfort. With 550
+              aspire to live amidst growth, convenience, and comfort. With 460+
               premium plots, a world-class 18,000 sqft. clubhouse, and 100+
               lifestyle amenities, Varam redefines modern plotted living in
               Chennai's booming Padappai corridor.

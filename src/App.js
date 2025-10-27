@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "../src/assets/css/style.css";
 import Home from "./pages/home";
+import ThankYou from "./components/thankyou.jsx";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         {/* Home Page */}
         <Route path="/varam" element={<Home />} />
+        <Route path="/thank-you" element={<ThankYou />} />
 
         {/* Catch-all route: redirect wrong URLs to Home */}
         <Route path="*" element={<Navigate to="/varam" replace />} />

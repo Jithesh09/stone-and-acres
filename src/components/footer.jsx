@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
-import { FaPhoneAlt, FaEnvelope } from "react-icons/fa"; // icons
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa"; // icons\
+import { useNavigate } from "react-router-dom";
 // import { handleSubmit } from "../utils/handleSubmit.js";
 
 const Footer = () => {
+  const navigate = useNavigate();
   const [showPolicy, setShowPolicy] = useState(false);
 
   const handleClose = () => setShowPolicy(false);
@@ -47,8 +49,11 @@ const Footer = () => {
 
       const result = await response.text();
       console.log("Server response:", result);
-      alert("Form submitted successfully!");
-      e.target.reset();
+      if(response.ok){
+      navigate("/thank-you");
+    }else{
+      navigate("/thank-you");
+    };
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("Something went wrong, please try again.");
@@ -93,7 +98,7 @@ const Footer = () => {
               </p>
               <p>
                 <FaEnvelope className="me-2 text-primary" />
-                contact@stoneandacres.in  
+                Contact@chainandlinks.com   
               </p>
             </div>
           </div>

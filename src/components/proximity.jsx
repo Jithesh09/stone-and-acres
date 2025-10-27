@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const ProximitySection = () => {
-  const [activeAccordion, setActiveAccordion] = useState("worksites");
+  const [activeAccordion, setActiveAccordion] = useState("schools");
 
   useEffect(() => {
     AOS.init();

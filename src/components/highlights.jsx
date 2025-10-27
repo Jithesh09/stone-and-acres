@@ -51,7 +51,7 @@ const Highlights = () => {
         <i className="fas fa-users"></i>
       </div>
       <h2 className="text-dark fs-1 mb-3">A</h2>
-      <p className="text-dark"><span className='fs-4'>550</span><br></br> Villa Plots</p>
+      <p className="text-dark"><span className='fs-4'>460+</span><br></br> Villa Plots</p>
     </div>
   </div>
 
