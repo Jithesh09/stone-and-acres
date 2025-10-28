@@ -10,7 +10,7 @@ function App() {
       <Routes>
         {/* Home Page */}
         <Route path="/varam" element={<Home />} />
-        <Route path="/thank-you" element={<ThankYou />} />
+        <Route path="/varam/thank-you" element={<ThankYou />} />
 
         {/* Catch-all route: redirect wrong URLs to Home */}
         <Route path="*" element={<Navigate to="/varam" replace />} />

@@ -45,14 +45,15 @@ function EdgeSection() {
 
       const result = await response.text();
       console.log("Server response:", result);
-      if(result.ok){
-      navigate("/thank-you");
-    }else{
-      navigate("/thank-you");
+      if (response.ok) {
+      // ✅
+      navigate("/varam/thank-you", { state: { submitted: true } });
+      e.target.reset();
     }
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("Something went wrong, please try again.");
+      e.target.reset();
     }
 
   };

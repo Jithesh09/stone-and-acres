@@ -1,9 +1,20 @@
 import React from "react";
+import { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import thankyouImage from "../assets/images/banner/Thank-you-HD-Size.jpg";
 import thankyouImagemobile from "../assets/images/banner/Thank-you-Reel-Size.jpg";
 import logo from "../assets/images/logo/varam_Black.png";
 
 const ThankYou = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    // if no state or wrong flag → redirect
+    if (!location.state?.submitted) {
+      navigate("/varam");
+    }
+  }, [location, navigate]);
   return (
     <>
   {/* Desktop View */}
