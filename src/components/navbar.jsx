@@ -155,11 +155,11 @@ function Navbar() {
           {/* Left */}
           <div className="navbar-nav">
             <a className="nav-link custom-link" href="/">Home</a>
-            <a className="nav-link custom-link" href="/edge"
-            onClick={(e) => handleNavClick(e, "edge", "/edge")}>Edge</a>
-            <a className="nav-link custom-link" href="/amenities" onClick={(e) => handleNavClick(e, "amenities", "/amenities")}>Amenities</a>
-            <a className="nav-link custom-link" href="/highlights"
-            onClick={(e) => handleNavClick(e, "highlights", "/highlights")}>Highlights</a>
+            <a className="nav-link custom-link" href="/varmedge"
+            onClick={(e) => handleNavClick(e, "edge", "/varamedge")}>Edge</a>
+            <a className="nav-link custom-link" href="/varamamenities" onClick={(e) => handleNavClick(e, "amenities", "/amenities")}>Amenities</a>
+            <a className="nav-link custom-link" href="/varamhighlights"
+            onClick={(e) => handleNavClick(e, "highlights", "/varamhighlights")}>Highlights</a>
           </div>
 
           {/* Center Logo */}
@@ -173,11 +173,11 @@ function Navbar() {
 
           {/* Right */}
           <div className="navbar-nav">
-            <a className="nav-link custom-link" href="/proximity" onClick={(e) => handleNavClick(e, "proximity", "/proximity")}>Proximity</a>
-            <a className="nav-link custom-link" href="/layout"
-            onClick={(e) => handleNavClick(e, "layout", "/layout")}>Layout</a>
-            <a className="nav-link custom-link" href="/gallery" onClick={(e) => handleNavClick(e, "gallery", "/gallery")}>Gallery</a>
-            <a className="nav-link custom-link" href="/contact" onClick={(e) => handleNavClick(e, "contact", "/contact")}>Contact Us</a>
+            <a className="nav-link custom-link" href="/varamproximity" onClick={(e) => handleNavClick(e, "proximity", "/varamproximity")}>Proximity</a>
+            <a className="nav-link custom-link" href="/varamlayout"
+            onClick={(e) => handleNavClick(e, "layout", "/varamlayout")}>Layout</a>
+            <a className="nav-link custom-link" href="/varamgallery" onClick={(e) => handleNavClick(e, "gallery", "/varamgallery")}>Gallery</a>
+            <a className="nav-link custom-link" href="/varam                                                 contact" onClick={(e) => handleNavClick(e, "contact", "/contact")}>Contact Us</a>
           </div>
         </div>
       </div>

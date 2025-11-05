@@ -1,30 +1,20 @@
-import React from "react";
-import Navbar from "../components/navbar";
-import Hero from "../components/home-banner";
-import EdgeSection from "../components/edge";
-import Amenities from "../components/amenities";
-import Highlights from "../components/highlights";
-import ProximitySection from "../components/proximity";
-import GallerySection from "../components/gallery";
-import Layout from "../components/layout";
-import Footer from "../components/footer";
-import HomePagePopupForm from "../components/homepage-popup";
+import React from 'react'
+import bannerImage from '../assets/images/banner/banner.jpg';
+import mobileBanner from '../assets/images/banner/mobileBanner.jpg';
 
-function Home() {
+
+const Home = () => {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <EdgeSection/>
-      <Amenities/>
-      <Highlights/>
-      <ProximitySection/>
-      <Layout/>
-      <GallerySection/>
-      <Footer/>
-      <HomePagePopupForm/>
-    </>
+  <div className="d-none d-md-block" style={{height:"100vh", width:"100vw"}}>
+    <img src={bannerImage} style={{width:"100%",height:"100%",objectFit:"cover"}} />
+  </div>
+
+  <div className="d-md-none" style={{height:"100vh", width:"100vw"}}>
+    <img src={mobileBanner} style={{width:"100%",height:"100%",objectFit:"cover"}} />
+  </div>
+</>
   );
-}
+};
 
 export default Home;
