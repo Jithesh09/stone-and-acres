@@ -9,7 +9,7 @@ import GallerySection from "../components/gallery";
 import Layout from "../components/layout";
 import Footer from "../components/footer";
 import HomePagePopupForm from "../components/homepage-popup";
-
+import Faq from "../components/faq";
 function varamHome() {
   return (
     <>
@@ -21,6 +21,7 @@ function varamHome() {
       <ProximitySection/>
       <Layout/>
       <GallerySection/>
+      <Faq/>
       <Footer/>
       <HomePagePopupForm/>
     </>

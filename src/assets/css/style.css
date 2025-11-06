@@ -139,6 +139,29 @@ body {
   z-index: -2;
 }
 
+.hero-background2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg,
+      var(--primary-color) 0%,
+      var(--border-color) 100%);
+  background-image: url("../../../src/assets/images/banner/Untitled-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -2;
+}
+
+@media screen and (max-width:768px) {
+  .hero-background2 {
+    background-image: url("../../../src/assets/images/banner/Untitled-2.jpg");
+    background-attachment: local;
+  }
+}
+
 @media screen and (max-width:768px) {
   .hero-background {
     background-image: url("../../../src/assets/images/banner/varamheroMobile.jpg");
@@ -393,6 +416,13 @@ font-family: "Playfair Display", serif;
 
 .edge-description {
   font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  color: #000000;
+}
+.edge-description-pon {
+  font-size: 1.5rem;
   line-height: 1.8;
   margin-bottom: 2rem;
   opacity: 0.9;
@@ -1441,3 +1471,285 @@ font-family: "Playfair Display", serif;
             justify-content: center;
             align-items: center;
         }
+
+/* home banner start */
+/* default desktop position (>=768px) */
+.desktop-btn-position {
+  bottom: 8vw;
+  right: 13vw;
+}
+
+.varam-btn {
+  background-color: #007bff;   /* your custom color */
+  color: white;
+  padding: 0.7rem 2.5rem;
+  border: none;
+  border-radius: 40px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.varam-btn:hover {
+  background-color: #0056b3;   /* hover darker shade */
+}
+
+.ponmar-btn {
+  background-color: #007bff;   /* your custom color */
+  color: white;
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 40px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.ponmar-btn:hover {
+  background-color: #014187;
+  color: white;
+}
+
+.mobile-btn-position {
+  bottom:300px;
+  justify-content:center;
+}
+
+
+
+/* Banner Section */
+.banner-section {
+}
+
+.banner-container img {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Form Section */
+.form-section {
+  /* position: relative;
+    z-index: 2;
+    margin-top: -50px;
+    padding-bottom: 50px; */
+  position: absolute;
+  z-index: 2;
+  /* margin-top: -50px; */
+  /* padding-bottom: 50px; */
+  top: 28%;
+  left: 120px;
+}
+
+.form-container {
+  width: 390px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 0px 20px 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form-logo {
+  /* margin-bottom: 15px; */
+}
+
+.form-logo img {
+  max-width: 150px;
+}
+
+.form-container h4 {
+  color: #000;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.contact-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.contact-form .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.phone-input-container {
+  position: relative;
+}
+
+.country-selector {
+  display: flex;
+  align-items: center;
+}
+
+.selected-flag {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.flag {
+  width: 20px;
+  height: 15px;
+  background-image: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/flags/4x3/in.svg");
+  background-size: cover;
+  margin-right: 5px;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #555;
+  margin-left: 5px;
+}
+
+.contact-form .form-control[type="tel"] {
+  /* padding-left: 55px; */
+}
+
+.consent-checkbox {
+  font-size: 12px;
+  margin: 20px 0;
+}
+
+.consent-checkbox input {
+  margin-right: 8px;
+}
+
+.submit-btn {
+  background-color: #d4af37; /* Golden color */
+  color: #000;
+  border: none;
+  padding: 12px 30px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #c5a227;
+}
+
+
+@media (max-width: 991px) {
+  .form-section {
+    margin-top: 0;
+    padding: 20px;
+  }
+
+  .form-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .form-section {
+    position: static !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .form-section {
+    position: static !important;
+  }
+}
+
+/* ======= Accordion Box (for Faqs) style ======= */
+.accordion-box {
+  position: relative;
+  padding: 0;
+}
+.accordion-box .block {
+  position: relative;
+  background: #fff;
+  border-radius: 0px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.accordion-box .block.active-block {
+  background-color: #fff;
+}
+.accordion-box .block:last-child {
+  margin-bottom: 0;
+}
+.accordion-box .block .acc-btn {
+  position: relative;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 20px 40px;
+  padding-right: 60px;
+  color: #222;
+  transition: all 500ms ease;
+  font-family: "Gilda Display", serif;
+}
+.accordion-box .block .acc-btn .count {
+  color: #aa8453;
+  padding-right: 3px;
+}
+.accordion-box .block .acc-btn:before {
+  position: absolute;
+  right: 35px;
+  top: 20px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #aa8453;
+  line-height: 30px;
+  content: "\e61a";
+  font-family: "Themify";
+  transition: all 500ms ease;
+}
+.accordion-box .block .acc-btn.active {
+  background-color: #fff;
+  color: #aa8453;
+}
+.accordion-box .block .acc-btn.active:before {
+  color: "Themify";
+  content: "\e622";
+}
+.accordion-box .block .acc-content {
+  position: relative;
+  display: none;
+}
+.accordion-box .block.active .acc-content {
+  display: block;
+}
+.accordion-box .block .content {
+  position: relative;
+  padding: 0px 40px 30px;
+  background-color: #fff;
+  color: #666;
+}
+.accordion-box .block .acc-content.current {
+  display: block;
+}
+.accordion-box .block .content .text {
+  display: block;
+  position: relative;
+  top: 0px;
+  display: block;
+}
+

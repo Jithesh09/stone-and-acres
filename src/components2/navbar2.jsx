@@ -100,14 +100,14 @@ function Navbar() {
           <div className="collapse navbar-collapse mt-2" id="mobileNav">
             <ul className="navbar-nav text-center">
               <li className="nav-item">
-                <a className="nav-link custom-link" href="/varam">
+                <a className="nav-link custom-link" href="/ponmar">
                   Home
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link custom-link" href="/edge"
                 onClick={(e) => handleNavClick(e, "edge", "/edge")}>
-                  Edge
+                  About
                 </a>
               </li>
               <li className="nav-item">
@@ -119,27 +119,27 @@ function Navbar() {
               <li className="nav-item">
                 <a className="nav-link custom-link" href="/highlights"
                 onClick={(e) => handleNavClick(e, "highlights", "/highlights")}>
-                  Highlights
+                  Why Ponmar
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link custom-link" href="/proximity"
                  onClick={(e) => handleNavClick(e, "proximity", "/proximity")}>
-                  Proximity
+                  Location
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link custom-link" href="/layout"
                 onClick={(e) => handleNavClick(e, "layout", "/layout")}>
-                  Layout
+                  Faq
                 </a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link custom-link" href="/gallery"
                 onClick={(e) => handleNavClick(e, "gallery", "/gallery")}>
                   Gallery
                 </a>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <a className="nav-link custom-link" href="/contact"
                 onClick={(e) => handleNavClick(e, "contact", "/contact")}>
@@ -154,29 +154,29 @@ function Navbar() {
         <div className="d-none d-lg-flex w-100 justify-content-between align-items-center">
           {/* Left */}
           <div className="navbar-nav">
-            <a className="nav-link custom-link" href="/varam">Home</a>
+            <a className="nav-link custom-link" href="/ponmar">Home</a>
             <a className="nav-link custom-link" href="/varmedge"
-            onClick={(e) => handleNavClick(e, "edge", "/varamedge")}>Edge</a>
+            onClick={(e) => handleNavClick(e, "edge", "/varamedge")}>About</a>
             <a className="nav-link custom-link" href="/varamamenities" onClick={(e) => handleNavClick(e, "amenities", "/amenities")}>Amenities</a>
             <a className="nav-link custom-link" href="/varamhighlights"
-            onClick={(e) => handleNavClick(e, "highlights", "/varamhighlights")}>Highlights</a>
+            onClick={(e) => handleNavClick(e, "highlights", "/varamhighlights")}>Why Ponmar</a>
           </div>
 
           {/* Center Logo */}
-          <a className="navbar-brand" href="/">
+          {/* <a className="navbar-brand" href="/ponmar">
             <img
               src={logo}
               alt="Logo"
               style={{ width: "180px" }}
             />
-          </a>
+          </a> */}
 
           {/* Right */}
           <div className="navbar-nav">
-            <a className="nav-link custom-link" href="/varamproximity" onClick={(e) => handleNavClick(e, "proximity", "/varamproximity")}>Proximity</a>
+            <a className="nav-link custom-link" href="/varamproximity" onClick={(e) => handleNavClick(e, "proximity", "/varamproximity")}>Location</a>
             <a className="nav-link custom-link" href="/varamlayout"
             onClick={(e) => handleNavClick(e, "layout", "/varamlayout")}>Layout</a>
-            <a className="nav-link custom-link" href="/varamgallery" onClick={(e) => handleNavClick(e, "gallery", "/varamgallery")}>Gallery</a>
+            {/* <a className="nav-link custom-link" href="/varamgallery" onClick={(e) => handleNavClick(e, "gallery", "/varamgallery")}>Gallery</a> */}
             <a className="nav-link custom-link" href="/varam                                                 contact" onClick={(e) => handleNavClick(e, "contact", "/contact")}>Contact Us</a>
           </div>
         </div>
