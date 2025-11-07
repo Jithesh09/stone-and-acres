@@ -17,6 +17,7 @@ const HomePagePopupForm = () => {
       name: formData.get("name")?.trim(),
       phone: formData.get("phone")?.trim(),
       email: formData.get("email")?.trim(),
+      source: 'ponmar',
     };
 
     console.log("Payload:", payload);
@@ -36,7 +37,7 @@ const HomePagePopupForm = () => {
     }
 
     try {
-      const response = await fetch("https://stoneandacres.in/sendmail.php", {
+      const response = await fetch("https://chainandlinks.com/sendmail.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

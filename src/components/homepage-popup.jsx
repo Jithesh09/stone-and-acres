@@ -36,7 +36,7 @@ const HomePagePopupForm = () => {
     }
 
     try {
-      const response = await fetch("https://stoneandacres.in/sendmail.php", {
+      const response = await fetch("https://chainandlinks.com/sendmail.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
