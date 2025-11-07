@@ -52,7 +52,7 @@ const Footer = () => {
       console.log("Server response:", result);
       if (response.ok) {
       // ✅
-      navigate("/varam/thank-you", { state: { submitted: true } });
+      navigate("/ponmar/thank-you");
       e.target.reset();
     }
     } catch (error) {
