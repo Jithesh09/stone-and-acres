@@ -20,6 +20,7 @@ const Footer = () => {
       name: formData.get("name")?.trim(),
       phone: formData.get("phone")?.trim(),
       email: formData.get("email")?.trim(),
+      source: 'ponmar',
     };
 
     console.log("Payload:", payload);
