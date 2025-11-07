@@ -112,7 +112,7 @@ function Hero() {
 
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-group">
-                <label htmlFor="name">Name<span className="text-danger">*</span></label>
+                <label htmlFor="name" className="form-name">Name<span className="text-danger">*</span></label>
                 <input
                   type="text"
                   id="name"

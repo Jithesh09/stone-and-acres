@@ -34,7 +34,7 @@ const Amenities = () => {
           },
         },
         {
-          name: "Stone & Acres Layout Design",
+          name: "Varam Layout Design",
           url: "/jewellery",
           image: Image1,
           bgColor: "black",

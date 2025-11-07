@@ -34,7 +34,7 @@ const Amenities = () => {
           },
         },
         {
-          name: "Stone & Acres Layout Design",
+          name: "Ponmar Layout Design",
           url: "/jewellery",
           image: Image1,
           bgColor: "black",

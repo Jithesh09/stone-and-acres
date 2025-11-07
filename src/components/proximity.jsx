@@ -27,7 +27,7 @@ const ProximitySection = () => {
               <h2 className="section-title mb-lg-5" data-aos="fade-up">
                 PROXIMITY
               </h2>
-            </div>
+            </div> 
             {/* <div className="col-12 col-lg-6 d-none d-md-block"></div> */}
           </div>
           <div className="row px-lg-5">

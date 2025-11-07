@@ -1,6 +1,6 @@
 import React from "react";
-import Image1 from "../assets/images/edge-img1.jpeg";
-import Image2 from "../assets/images/edge-img2.jpeg";
+import Image1 from "../assets/images/40.png";
+import Image2 from "../assets/images/32.png";
 import Brocure from "../assets/images/brocure/brocure_varam.pdf";
 import { useNavigate } from "react-router-dom";
 // import { handleSubmit } from "../utils/handleSubmit.js";
@@ -172,7 +172,7 @@ function EdgeSection() {
             data-aos="fade-left"
             data-aos-duration="1000"
           >
-            <h1 className="edge-title" data-aos="fade-up">
+            <h1 className="edge-title mt-5" data-aos="fade-up">
               Best Plots in Ponmar
             </h1>
             <p className="edge-description-pon" data-aos="fade-up">

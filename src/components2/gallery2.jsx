@@ -2,70 +2,45 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Image1 from "../assets/images/gallery/400-X-400-01.jpg";
-import Image2 from "../assets/images/gallery/400-X-400-02.jpg";
-import Image3 from "../assets/images/gallery/400-X-400-03.jpg";
-import Image4 from "../assets/images/gallery/400-X-400-04.jpg";
-import Image5 from "../assets/images/gallery/400-X-400-05.jpg";
-import Image6 from "../assets/images/gallery/400-X-400-06.jpg";
-import Image7 from "../assets/images/gallery/400-X-400-07.jpg";
-import Image8 from "../assets/images/gallery/400-X-400-08.jpg";
-import Image9 from "../assets/images/gallery/400-X-400-09.jpg";
-import Image10 from "../assets/images/gallery/400-X-400-10.jpg";
-import Image11 from "../assets/images/gallery/400-X-400-11.jpg";
-import Image12 from "../assets/images/gallery/400-X-400-12.jpg";
+import Image1 from "../assets/images/gallery/1.png";
+import Image2 from "../assets/images/gallery/2.png";
+import Image3 from "../assets/images/gallery/3.png";
+import Image4 from "../assets/images/gallery/4.jpg";
+import Image5 from "../assets/images/gallery/5.png";
+import Image6 from "../assets/images/gallery/6.png";
+import Image7 from "../assets/images/gallery/7.png";
 
 const GallerySection = () => {
   // Amenities data
   const amenities = [
     {
       image: Image1,
-      title: "CRICKET NETS"
-    },
-    {
-      image: Image2,
-      title: "INFINITY WALKWAY"
-    },
-    {
-      image: Image3,
       title: "KIDS PLAY AREA"
     },
     {
+      image: Image2,
+      title: "GYM"
+    },
+    {
+      image: Image3,
+      title: "BADMINTON COURT"
+    },
+    {
       image: Image4,
-      title: "MULTIPURPOSE COURT"
+      title: "OPEN AIR THEATRE"
     },
     {
       image: Image5,
-      title: "OUTDOOR GYM"
+      title: "CROSSFIT"
     },
     {
       image: Image6,
-      title: "OUTDOOR GYM"
+      title: "PARK"
     },
     {
-      image: Image7,
-      title: "OUTDOOR GYM"
+      image: Image7   ,
+      title: "REST AREA"
     },
-    {
-      image: Image8,
-      title: "OUTDOOR GYM"
-    },
-    {
-      image: Image9,
-      title: "OUTDOOR GYM"
-    },
-    {
-      image: Image10,
-      title: "OUTDOOR GYM"
-    },
-    {
-      image: Image11,
-      title: "OUTDOOR GYM"
-    },
-    {
-      image: Image12,
-      title: "OUTDOOR GYM"
-    }
   ];
 
   // Slider settings
@@ -174,7 +149,7 @@ const GallerySection = () => {
 
   return (
     <>
-    <section className="amenities-pg-sec" id="gallery">
+    <section className="amenities-pg-sec" id="amenities">
       <div className="container">
         <div className="prop-ament-wrap d-block d-md-none">
           <div className="heading">

@@ -11,7 +11,7 @@ const Highlights = () => {
             data-aos="fade-left"
             data-aos-duration="1000"
           >
-            <h2 className="section-title mb-lg-5 highlights" data-aos="fade-up">
+            <h2 className="section-title mb-lg-3 highlights" data-aos="fade-up">
               Why Choose Ponmar?
             </h2>
           </div>
@@ -102,7 +102,7 @@ const Highlights = () => {
               </p>
             </div>
           </div> */}
-          <div className="col-10 mb-4 edge-description">
+          <div className="col-10 mb-1 edge-description">
             Ponmar is one of Chennai’s most promising real-estate destinations,
             located strategically between Mambakkam and Medavakkam, making it
             perfect for both residential and investment purposes. With growing

@@ -20,15 +20,15 @@ const Home = () => {
   className="position-absolute d-none d-md-flex desktop-btn-position"
   style={{ gap: "50px" }}
 >
-  <button className=" fs-2 banner-btn-wrap varam-btn" onClick={() => navigate("/varam")}>VARAM</button>
+  <button className=" fs-2 banner-btn-wrap varam-btn" onClick={() => navigate("/varam")}>PADAPPAI</button>
   <button className=" fs-2 banner-btn-wrap ponmar-btn" onClick={() => navigate("/ponmar")}>PONMAR</button>
 </div>
 
 <div
   className="position-absolute d-flex d-md-none mobile-btn-position"
   style={{ width:"100%", gap:"12px" }}
-><button className="varam-btn fs-4 banner-btn-wrap">VARAM</button>
-  <button className="ponmar-btn fs-4 banner-btn-wrap">PONMAR</button></div>
+><button className="varam-btn fs-4 banner-btn-wrap"onClick={() => navigate("/varam")}>PADAPPAI</button>
+  <button className="ponmar-btn fs-4 banner-btn-wrap"onClick={() => navigate("/ponmar")}>PONMAR</button></div>
 
 </>
   );

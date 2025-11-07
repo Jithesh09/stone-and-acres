@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Collapse from "bootstrap/js/dist/collapse"; // ✅ import Collapse
-import logo from "../assets/images/logo/varam_Black.png"
+import logo from "../assets/images/logo/chainandlinks.jpg";
 function Navbar() {
   useEffect(() => {
     // Smooth scroll + close collapse
@@ -105,32 +105,32 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="/edge"
-                onClick={(e) => handleNavClick(e, "edge", "/edge")}>
+                <a className="nav-link custom-link" href="/ponmar-about"
+                onClick={(e) => handleNavClick(e, "edge", "/ponmar-about")}>
                   About
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="/amenities"
-                onClick={(e) => handleNavClick(e, "amenities", "/amenities")}>
+                <a className="nav-link custom-link" href="/ponmar-amenities"
+                onClick={(e) => handleNavClick(e, "amenities", "/ponmar-amenities")}>
                   Amenities
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="/highlights"
-                onClick={(e) => handleNavClick(e, "highlights", "/highlights")}>
+                <a className="nav-link custom-link" href="/ponmar-why-ponmar"
+                onClick={(e) => handleNavClick(e, "highlights", "/ponmar-why-ponmar")}>
                   Why Ponmar
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="/proximity"
-                 onClick={(e) => handleNavClick(e, "proximity", "/proximity")}>
+                <a className="nav-link custom-link" href="/ponmar-location"
+                 onClick={(e) => handleNavClick(e, "proximity", "/ponmar-location")}>
                   Location
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="/layout"
-                onClick={(e) => handleNavClick(e, "layout", "/layout")}>
+                <a className="nav-link custom-link" href="/ponmar-Faq"
+                onClick={(e) => handleNavClick(e, "layout", "/ponmar-faq")}>
                   Faq
                 </a>
               </li>
@@ -141,8 +141,8 @@ function Navbar() {
                 </a>
               </li> */}
               <li className="nav-item">
-                <a className="nav-link custom-link" href="/contact"
-                onClick={(e) => handleNavClick(e, "contact", "/contact")}>
+                <a className="nav-link custom-link" href="/ponmar-contact-us"
+                onClick={(e) => handleNavClick(e, "contact", "/ponmar-contact-us")}>
                   Contact Us
                 </a>
               </li>
@@ -155,29 +155,29 @@ function Navbar() {
           {/* Left */}
           <div className="navbar-nav">
             <a className="nav-link custom-link" href="/ponmar">Home</a>
-            <a className="nav-link custom-link" href="/varmedge"
-            onClick={(e) => handleNavClick(e, "edge", "/varamedge")}>About</a>
-            <a className="nav-link custom-link" href="/varamamenities" onClick={(e) => handleNavClick(e, "amenities", "/amenities")}>Amenities</a>
-            <a className="nav-link custom-link" href="/varamhighlights"
-            onClick={(e) => handleNavClick(e, "highlights", "/varamhighlights")}>Why Ponmar</a>
+            <a className="nav-link custom-link" href="/ponmar-about"
+            onClick={(e) => handleNavClick(e, "edge", "/ponmar-about")}>About</a>
+            <a className="nav-link custom-link" href="/ponmar-amenities" onClick={(e) => handleNavClick(e, "amenities", "/ponmar-amenities")}>Amenities</a>
+            <a className="nav-link custom-link" href="/ponmar-why-ponmar"
+            onClick={(e) => handleNavClick(e, "highlights", "/ponmar-why-ponmar")}>Why Ponmar</a>
           </div>
 
           {/* Center Logo */}
-          {/* <a className="navbar-brand" href="/ponmar">
+          <a className="navbar-brand" href="/ponmar">
             <img
               src={logo}
               alt="Logo"
               style={{ width: "180px" }}
             />
-          </a> */}
+          </a>
 
           {/* Right */}
           <div className="navbar-nav">
-            <a className="nav-link custom-link" href="/varamproximity" onClick={(e) => handleNavClick(e, "proximity", "/varamproximity")}>Location</a>
-            <a className="nav-link custom-link" href="/varamlayout"
-            onClick={(e) => handleNavClick(e, "layout", "/varamlayout")}>Layout</a>
+            <a className="nav-link custom-link" href="/ponmar-location" onClick={(e) => handleNavClick(e, "proximity", "/ponmar-location")}>Location</a>
+            <a className="nav-link custom-link" href="/ponmar-faq"
+            onClick={(e) => handleNavClick(e, "layout", "/ponmar-faq")}>FAQ</a>
             {/* <a className="nav-link custom-link" href="/varamgallery" onClick={(e) => handleNavClick(e, "gallery", "/varamgallery")}>Gallery</a> */}
-            <a className="nav-link custom-link" href="/varam                                                 contact" onClick={(e) => handleNavClick(e, "contact", "/contact")}>Contact Us</a>
+            <a className="nav-link custom-link" href="/ponmar-contact-us" onClick={(e) => handleNavClick(e, "contact", "/ponmar-contact-us")}>Contact Us</a>
           </div>
         </div>
       </div>

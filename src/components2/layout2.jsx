@@ -9,12 +9,12 @@ const Layout = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
   return (
-        <section className="section-padding bg-cream layout-section">
+        <section className="section-padding bg-cream layout-section" id="layout">
       <div className="container">
         <div className="row">
           <div className="col-md-12">
             <div className=" text-center">
-            <h1 className="section-title mb-lg-5 ">F.A.Qs</h1>
+            <h2 className="section-title mb-lg-5 ">FAQ</h2>
             </div>
             <ul className="accordion-box clearfix">
               <li
@@ -48,8 +48,8 @@ const Layout = () => {
                   <div className="acc-content">
                     <div className="content">
                       <div className="text">
-                        Yes, Ponmar is surrounded by reputed schools, colleges, and hospitals in nearby areas like Medavakkam, Perumbakkam, and Navalur, ensuring convenience for residents.      q
-                      </div>
+                        Yes, Ponmar is surrounded by reputed schools, colleges, and hospitals in nearby areas like Medavakkam, Perumbakkam, and Navalur, ensuring convenience for residents.      
+                      </div> 
                     </div>
                   </div>
                 )}

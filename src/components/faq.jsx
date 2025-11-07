@@ -14,7 +14,7 @@ const Layout = () => {
         <div className="row">
           <div className="col-md-12">
             <div className=" text-center">
-            <h1 className="section-title mb-lg-5 ">F.A.Qs</h1>
+            <h2 className="section-title mb-lg-5 ">FAQ</h2>
             </div>
             <ul className="accordion-box clearfix">
               <li

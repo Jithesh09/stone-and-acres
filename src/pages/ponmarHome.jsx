@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import Navbar from "../components2/navbar2";
 import Hero from "../components2/home-banner2";
 import EdgeSection from "../components2/edge2";
@@ -11,22 +12,46 @@ import Footer from "../components2/footer2";
 import HomePagePopupForm from "../components2/homepage-popup2";
 
 
-const ponmarHome = () => {
+const PonmarHome = () => {
+
+    useEffect(() => {
+  document.title = "Residential Plots For Sale In Ponmar Near Medavakkam";
+
+  let metaDesc = document.querySelector("meta[name='description']");
+  if(!metaDesc){
+    metaDesc = document.createElement("meta");
+    metaDesc.name = "description";
+    document.head.appendChild(metaDesc);
+  }
+  metaDesc.content = "Premium plots in Ponmar near Medavakkam, OMR & SIPCOT IT Park. 125-acre gated community with lifestyle amenities and great connectivity in Chennai.";
+
+  // change favicon
+  const favicon = document.getElementById("favicon");
+  if (favicon) favicon.href = "/chainlogo.jpg";
+
+  // change canonical
+  let canonical = document.querySelector("link[rel='canonical']");
+  if (!canonical) {
+    canonical = document.createElement("link");
+    canonical.rel = "canonical";
+    document.head.appendChild(canonical);
+  }
+  canonical.href = "https://chainandlinks.com/ponmar";
+}, []);
   return (
     
     <>
     <Navbar />
       <Hero />
       <EdgeSection/>
-      <Amenities/>
+      <GallerySection/>
       <Highlights/>
       <ProximitySection/>
       <Layout/>
-      {/* <GallerySection/> */}
       <Footer/>
       <HomePagePopupForm/>
     </>
   )
 }
 
-export default ponmarHome
+export default PonmarHome

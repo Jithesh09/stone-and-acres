@@ -182,11 +182,11 @@ function EdgeSection() {
               lifestyle amenities, Varam redefines modern plotted living in
               Chennai's booming Padappai corridor.
             </p>
-            <span className="download-btn-div">
+            {/* <span className="download-btn-div">
               <a href={Brocure} download="Varam_Brochure.pdf">
                 <button className="download-btn">Download Brochure</button>
               </a>
-            </span>
+            </span> */}
           </div>
         </div>
       </div>
