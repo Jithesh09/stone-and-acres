@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import thankyouImage from "../assets/images/banner/thankyoubanner.jpg";
 import thankyouImagemobile from "../assets/images/banner/thankyoureel.jpg";
-import logo from "../assets/images/logo/varam_Black.png";
+import logo from "../assets/images/logo/chainlogo.jpg";
 
 const ThankYou = () => {
   const navigate = useNavigate();
