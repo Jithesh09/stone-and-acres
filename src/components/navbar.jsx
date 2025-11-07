@@ -105,9 +105,9 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-link" href="/varam-edge"
-                onClick={(e) => handleNavClick(e, "edge", "/varam-edge")}>
-                  Edge
+                <a className="nav-link custom-link" href="/varam-about"
+                onClick={(e) => handleNavClick(e, "edge", "/varam-about")}>
+                  about
                 </a>
               </li>
               <li className="nav-item">
@@ -155,8 +155,8 @@ function Navbar() {
           {/* Left */}
           <div className="navbar-nav">
             <a className="nav-link custom-link" href="/varam">Home</a>
-            <a className="nav-link custom-link" href="/varm-edge"
-            onClick={(e) => handleNavClick(e, "edge", "/varam-edge")}>Edge</a>
+            <a className="nav-link custom-link" href="/varm-about"
+            onClick={(e) => handleNavClick(e, "edge", "/varam-about")}>About</a>
             <a className="nav-link custom-link" href="/varam-amenities" onClick={(e) => handleNavClick(e, "amenities", "/varam-amenities")}>Amenities</a>
             <a className="nav-link custom-link" href="/varam-highlights"
             onClick={(e) => handleNavClick(e, "highlights", "/varam-highlights")}>Highlights</a>

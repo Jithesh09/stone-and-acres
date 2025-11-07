@@ -83,11 +83,10 @@ const Footer = () => {
             <div className="footerAddress mb-4">
               <h4 className="mb-3">Our Address</h4>
               <p>
-                VXFM+4Q6, Tambaram - Mudichur, <br /> 
-                 Walajabad Rd, Mahanyam R.F,<br />
-                Chennai - 601301,<br />
+                No.78/2 (138/2), L.B Road, <br /> 
+                 Thiruvanmiyur<br />
+                Chennai - 600 041,<br />
                  Tamil Nadu
-                
               </p>
             </div>
 

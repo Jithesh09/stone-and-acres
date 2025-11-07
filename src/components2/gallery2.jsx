@@ -200,7 +200,7 @@ const GallerySection = () => {
 
         <div className="prop-ament-wrap d-none d-md-block">
           <div className="heading">
-            <h3>Gallery</h3>
+            <h3>AMENITIES</h3>
           </div>
 
           <div className="prop-ament-block">
