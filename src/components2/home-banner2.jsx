@@ -33,7 +33,7 @@ function Hero() {
 
   const navigate = useNavigate();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit1 = async (e) => {
     e.preventDefault();
     if (!validateForm()) return;
 
@@ -111,7 +111,7 @@ function Hero() {
             </div> */}
             {/* <h4>Please share your contact details to download the brochure</h4> */}
 
-            <form className="contact-form" onSubmit={handleSubmit}>
+            <form className="contact-form" onSubmit={handleSubmit1}>
               <div className="form-group">
                 <label htmlFor="name" className="form-name">Name<span className="text-danger">*</span></label>
                 <input
