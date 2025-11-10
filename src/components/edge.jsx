@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 function EdgeSection() {
   const navigate = useNavigate();
-  const handleSubmit = async (e) => {
+  const handleSubmit2 = async (e) => {
     e.preventDefault();
     console.log("Form submit triggered ✅");
 
@@ -103,7 +103,7 @@ function EdgeSection() {
           <p className="text-center" data-aos="fade-left" data-aos-duration="1000">
            Get in touch for more information
           </p>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit2}>
             <div
               className="row m-0 mt-2 mt-lg-5"
               data-aos="fade-up"

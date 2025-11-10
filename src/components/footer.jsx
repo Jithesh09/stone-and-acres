@@ -11,7 +11,7 @@ const Footer = () => {
   const handleClose = () => setShowPolicy(false);
   const handleShow = () => setShowPolicy(true);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit3 = async (e) => {
     e.preventDefault();
     console.log("Form submit triggered ✅");
 
@@ -106,7 +106,7 @@ const Footer = () => {
           {/* Right column - form */}
           <div className="col-md-6 mb-4">
             <h4 className="mb-3">Quick Contact</h4>
-            <form onSubmit={handleSubmit} className="bg-secondary p-4 rounded">
+            <form onSubmit={handleSubmit3} className="bg-secondary p-4 rounded">
               <div className="mb-3">
                 <input
                   type="text"
