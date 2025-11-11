@@ -12,7 +12,7 @@ const ThankYou = () => {
   useEffect(() => {
     // if no state or wrong flag → redirect
     if (!location.state?.submitted) {
-      navigate("/");
+      navigate("/", { replace:true });
     }
   }, [location, navigate]);
   return (
@@ -23,7 +23,7 @@ const ThankYou = () => {
     style={{ overflow: "hidden" }}
   >
     {/* Logo (top-left) */}
-    <a href="/">
+    <a href="/varam">
     <img
       src={logo}
       alt="Logo"

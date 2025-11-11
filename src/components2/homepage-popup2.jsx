@@ -1,14 +1,16 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Modal, Button } from "react-bootstrap";
 // import { handleSubmit } from "../utils/handleSubmit.js";
 
-const HomePagePopupForm = () => {
+const HomePagePopupFormPonmar = () => {
+  const navigate = useNavigate();
   const [showForm, setShowForm] = useState(false);
 
   const handleClose = () => setShowForm(false);
   const handleShow = () => setShowForm(true);
 
-  const handleSubmit = async (e) => {
+  const handleSubmitPonmar = async (e) => {
     e.preventDefault();
     console.log("Form submit triggered ✅");
 
@@ -47,8 +49,12 @@ const HomePagePopupForm = () => {
 
       const result = await response.text();
       console.log("Server response:", result);
-      alert("Form submitted successfully!");
-      e.target.reset();
+      if (response.ok) {
+        setShowForm(false);
+        navigate("/ponmar/thank-you", { state: { submitted: true } });
+        e.target.reset();
+        return;
+      }
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("Something went wrong, please try again.");
@@ -127,7 +133,7 @@ const HomePagePopupForm = () => {
           <Modal.Title>Quick Contact Form</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmitPonmar}>
             <div className="mb-3">
               <input
                 type="text"
@@ -167,4 +173,4 @@ const HomePagePopupForm = () => {
   );
 };
 
-export default HomePagePopupForm;
+export default HomePagePopupFormPonmar;

@@ -4,7 +4,7 @@ import { FaPhoneAlt, FaEnvelope } from "react-icons/fa"; // icons\
 import { useNavigate } from "react-router-dom";
 // import { handleSubmit } from "../utils/handleSubmit.js";
 
-const Footer = () => {
+const FooterVaram = () => {
   const navigate = useNavigate();
   const [showPolicy, setShowPolicy] = useState(false);
 
@@ -13,13 +13,14 @@ const Footer = () => {
 
   const handleSubmit3 = async (e) => {
     e.preventDefault();
+     e.stopPropagation();
     console.log("Form submit triggered ✅");
 
-    const formData = new FormData(e.target);
+    const fd = new FormData(e.target);
     const payload = {
-      name: formData.get("name")?.trim(),
-      phone: formData.get("phone")?.trim(),
-      email: formData.get("email")?.trim(),
+      name: fd.get("name")?.trim(),
+      phone: fd.get("phone")?.trim(),
+      email: fd.get("email")?.trim(),
     };
 
     console.log("Payload:", payload);
@@ -178,4 +179,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterVaram;

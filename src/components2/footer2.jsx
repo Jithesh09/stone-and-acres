@@ -4,8 +4,9 @@ import { FaPhoneAlt, FaEnvelope } from "react-icons/fa"; // icons\
 import { useNavigate } from "react-router-dom";
 // import { handleSubmit } from "../utils/handleSubmit.js";
 
-const Footer = () => {
+const FooterPonmar = () => {
   const navigate = useNavigate();
+  console.log("Submit triggered");
   const [showPolicy, setShowPolicy] = useState(false);
 
   const handleClose = () => setShowPolicy(false);
@@ -13,6 +14,7 @@ const Footer = () => {
 
   const handleSubmitPonFooter = async (e) => {
     e.preventDefault();
+     e.stopPropagation();
     console.log("Form submit triggered ✅");
 
     const formData = new FormData(e.target);
@@ -179,4 +181,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterPonmar;

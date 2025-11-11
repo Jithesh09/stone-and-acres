@@ -5,14 +5,14 @@ import thankyouImage from "../assets/images/banner/thankyoubanner.jpg";
 import thankyouImagemobile from "../assets/images/banner/thankyoureel.jpg";
 import logo from "../assets/images/logo/chainlogo.jpg";
 
-const ThankYou = () => {
+const ThankYou2 = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
   useEffect(() => {
     // if no state or wrong flag → redirect
     if (!location.state?.submitted) {
-      navigate("/");
+      navigate("/", { replace:true });
     }
   }, [location, navigate]);
   return (
@@ -23,7 +23,7 @@ const ThankYou = () => {
     style={{ overflow: "hidden" }}
   >
     {/* Logo (top-left) */}
-    <a href="/">
+    <a href="/ponmar">
     <img
       src={logo}
       alt="Logo"
@@ -55,7 +55,7 @@ const ThankYou = () => {
     style={{ overflow: "hidden" }}
   >
     {/* Logo (top-left) */}
-     <a href="/varam">
+     <a href="/ponmar">
     <img
       src={logo}
       alt="Logo"
@@ -85,4 +85,4 @@ const ThankYou = () => {
   );
 };
 
-export default ThankYou;
+export default ThankYou2;

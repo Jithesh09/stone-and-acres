@@ -39,43 +39,41 @@ function Hero() {
 
     setLoading(true);
     try {
+      const response = await fetch("https://chainandlinks.com/sendmail.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          source: "ponmar",
+        }),
+      });
 
-  const response = await fetch("https://chainandlinks.com/sendmail.php", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      name: formData.name,
-      email: formData.email,
-      phone: formData.phone,
-      source: 'ponmar',
-    }),
-  });
+      const result = await response.text();
+      console.log("Server response:", result);
 
-  const result = await response.text();
-  console.log("Server response:", result);
-
-  if(!response.ok){
-    toast.error("Server error, please try again");
-    return;
-  }
+      if (!response.ok) {
+        toast.error("Server error, please try again");
+        return;
+      }
 
       setFormData({ name: "", email: "", phone: "" });
-  localStorage.setItem("SubmittedAt", Date.now().toString());
-  setShowConfirmation(true);
-  toast.success("Form submitted successfully!");
-  navigate("/ponmar/thank-you", { state: { submitted: true } });
+      localStorage.setItem("SubmittedAt", Date.now().toString());
+      setShowConfirmation(true);
+      toast.success("Form submitted successfully!");
+      navigate("/ponmar/thank-you", { state: { submitted: true } });
 
-  setTimeout(() => {
-    setShowPopup(false);
-    setShowConfirmation(false);
-  }, 3000);
-
-} catch (error) {
-  console.error("Form submission failed:", error);
-  toast.error("Failed to submit form. Please try again.");
-} finally {
-  setLoading(false);
-}
+      setTimeout(() => {
+        setShowPopup(false);
+        setShowConfirmation(false);
+      }, 3000);
+    } catch (error) {
+      console.error("Form submission failed:", error);
+      toast.error("Failed to submit form. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
   return (
     <div className="kingdom-of-joy">
