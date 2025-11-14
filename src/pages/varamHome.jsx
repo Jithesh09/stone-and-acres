@@ -8,7 +8,7 @@ import Highlights from "../components/highlights";
 import ProximitySection from "../components/proximity";
 import GallerySection from "../components/gallery";
 import Layout from "../components/layout";
-import Footer from "../components/footer";
+import Footer from "../common/footer";
 import HomePagePopupForm from "../components/homepage-popup";
 import Faq from "../components/faq";
 function VaramHome() {
@@ -48,7 +48,6 @@ function VaramHome() {
       <GallerySection/>
       <Faq/>
       <Footer/>
-      {/* <HomePagePopupForm/> */}
     </>
   );
 }

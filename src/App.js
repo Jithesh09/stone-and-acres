@@ -6,6 +6,7 @@ import ThankYou from "./components/thankyou.jsx";
 import Home from "./pages/home.jsx";
 import Ponmar from "./pages/ponmarHome.jsx";
 import ThankYou2 from "./components2/thankyou2.jsx";
+import GlobalPopupWrapper from "./common/GlobalPopupWrapper.jsx";
 
 function App() {  
   return (
@@ -21,6 +22,7 @@ function App() {
         {/* Catch-all route: redirect wrong URLs to Home */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+      <GlobalPopupWrapper />
     </BrowserRouter>
   );
 }

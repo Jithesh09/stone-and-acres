@@ -8,8 +8,7 @@ import Highlights from "../components2/highlights2";
 import ProximitySection from "../components2/proximity2";
 import GallerySection from "../components2/gallery2";
 import Layout from "../components2/layout2";
-import Footer from "../components2/footer2";
-import HomePagePopupForm from "../components2/homepage-popup2";
+import Footer from "../common/footer";
 
 
 const PonmarHome = () => {
@@ -49,7 +48,6 @@ const PonmarHome = () => {
       <ProximitySection/>
       <Layout/>
       <Footer/>
-      {/* <HomePagePopupForm/> */}
     </>
   )
 }
