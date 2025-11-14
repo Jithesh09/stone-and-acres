@@ -86,10 +86,12 @@ const FooterPonmar = () => {
             <div className="footerAddress mb-4">
               <h4 className="mb-3">Our Address</h4>
               <p>
-                No.78/2 (138/2), L.B Road, <br /> 
-                 Thiruvanmiyur<br />
-                Chennai - 600 041,<br />
-                 Tamil Nadu
+                No.78/2 (138/2), L.B Road, <br />
+                Thiruvanmiyur
+                <br />
+                Chennai - 600 041,
+                <br />
+                Tamil Nadu
               </p>
             </div>
 
@@ -101,7 +103,7 @@ const FooterPonmar = () => {
               </p>
               <p>
                 <FaEnvelope className="me-2 text-primary" />
-                Contact@chainandlinks.com   
+                Contact@chainandlinks.com
               </p>
             </div>
           </div>
@@ -109,36 +111,33 @@ const FooterPonmar = () => {
           {/* Right column - form */}
           <div className="col-md-6 mb-4">
             <h4 className="mb-3">Quick Contact</h4>
-            <form onSubmit={handleSubmitPonFooter} className="bg-secondary p-4 rounded">
-              <div className="mb-3">
-                <input
-                  type="text"
-                  name="name"
-                  className="form-control"
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-              <div className="mb-3">
-                <input
-                  type="tel"
-                  name="phone"
-                  className="form-control"
-                  placeholder="Your Phone Number"
-                  required
-                />
-              </div>
-              <div className="mb-3">
-                <input
-                  type="email"
-                  name="email"
-                  className="form-control"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-              <button type="submit" className="btn w-100 text-light hover:bg-dark" style={{backgroundColor: "var(--header-title)"}}>
+            <form
+              className="p-4 bg-dark text-light"
+              onSubmit={(e) => e.preventDefault()}
+            >
+              <input
+                type="text"
+                name="name"
+                className="form-control mb-3"
+                placeholder="Your Name"
+              />
+              <input
+                type="tel"
+                name="phone"
+                className="form-control mb-3"
+                placeholder="Your Phone"
+              />
+              <input
+                type="email"
+                name="email"
+                className="form-control mb-3"
+                placeholder="Your Email"
+              />
+              <button type="submit" className="btn btn-primary w-100">
                 Send
+              </button>
+              <button type="button" className="btn btn-link text-light mt-2">
+                Privacy Policy
               </button>
             </form>
           </div>
@@ -155,7 +154,8 @@ const FooterPonmar = () => {
             </button>
           </div>
           <div className="col-md-6 text-center text-md-end">
-            <small>© {new Date().getFullYear()} Chain and links</small><br></br>
+            <small>© {new Date().getFullYear()} Chain and links</small>
+            <br></br>
             <small>Powered By ATWIAS</small>
           </div>
         </div>
@@ -168,7 +168,10 @@ const FooterPonmar = () => {
         </Modal.Header>
         <Modal.Body>
           <p>
-            Your privacy is our priority. We collect only necessary data to improve your villa plots buying experience. Your information is secure and never shared. By using our site, you agree to our data practices.Reach out to us with any concerns.
+            Your privacy is our priority. We collect only necessary data to
+            improve your villa plots buying experience. Your information is
+            secure and never shared. By using our site, you agree to our data
+            practices.Reach out to us with any concerns.
           </p>
         </Modal.Body>
         <Modal.Footer>

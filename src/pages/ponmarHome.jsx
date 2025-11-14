@@ -49,7 +49,7 @@ const PonmarHome = () => {
       <ProximitySection/>
       <Layout/>
       <Footer/>
-      <HomePagePopupForm/>
+      {/* <HomePagePopupForm/> */}
     </>
   )
 }

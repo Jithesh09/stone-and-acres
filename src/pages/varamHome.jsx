@@ -21,7 +21,7 @@ function VaramHome() {
     metaDesc.name = "description";
     document.head.appendChild(metaDesc);
   }
-  metaDesc.content = "VARAM offers premium RERA approved villa plots in Padappai, designed for those seeking a peaceful lifestyle with excellent connectivity and long-term investment value.";
+  metaDesc.content = "Secure your future with smart real estate investments. Explore affordable plots in Chennai’s top-growth corridors with Chain and Links.";
 
   // change favicon
   const favicon = document.getElementById("favicon");
@@ -48,7 +48,7 @@ function VaramHome() {
       <GallerySection/>
       <Faq/>
       <Footer/>
-      <HomePagePopupForm/>
+      {/* <HomePagePopupForm/> */}
     </>
   );
 }
