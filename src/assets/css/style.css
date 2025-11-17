@@ -45,6 +45,7 @@ body {
   color: var(--text-dark);
   background-color: var(--bg-white);
   overflow-x: hidden !important;
+  backface-visibility: hidden; /* prevents white flash */
 }
 
 /* =========================================================
