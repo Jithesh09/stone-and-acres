@@ -7,6 +7,7 @@ import Home from "./pages/home.jsx";
 import Ponmar from "./pages/ponmarHome.jsx";
 import ThankYou2 from "./components2/thankyou2.jsx";
 import GlobalPopupWrapper from "./common/GlobalPopupWrapper.jsx";
+import PrivacyPolicy from "./common/privacyPolicy.jsx";
 
 function App() {  
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/varam/thank-you" element={<ThankYou />} />
         <Route path="/ponmar/thank-you" element={<ThankYou2 />} />
         <Route path="/ponmar" element={<Ponmar />} />
+        <Route path="/privacy-policy" element= {<PrivacyPolicy />} />
 
         {/* Catch-all route: redirect wrong URLs to Home */}
         <Route path="*" element={<Navigate to="/" replace />} />

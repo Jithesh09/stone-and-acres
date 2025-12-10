@@ -6,14 +6,9 @@ import { useNavigate, useLocation } from "react-router-dom";
 const Footer = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const [showPolicy, setShowPolicy] = useState(false);
 
   const isPonmar = location.pathname.startsWith("/ponmar");
-  const isVaram = location.pathname.startsWith("/varam");
-
-  const handleClose = () => setShowPolicy(false);
-  const handleShow = () => setShowPolicy(true);
-
+  const isVaram = location.pathname.startsWith("/varam")
   const handleSubmit = async (e) => {
     e.preventDefault();
     e.stopPropagation();
@@ -130,7 +125,7 @@ const Footer = () => {
         <div id="contact" className="row border-top pt-3 mt-4">
           <div className="col-md-6 text-center text-md-start mb-2 mb-md-0">
             <button
-              onClick={handleShow}
+              onClick={() => navigate("/privacy-policy")}
               className="btn btn-link text-light text-decoration-none p-0"
             >
               Privacy Policy
@@ -144,21 +139,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Modal */}
-      <Modal show={showPolicy} onHide={handleClose} centered>
-        <Modal.Header closeButton>
-          <Modal.Title>Privacy Policy</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <p>
-            Your privacy is our priority. We collect only necessary data to enhance your experience.
-            Your information is secure and never shared.
-          </p>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>Close</Button>
-        </Modal.Footer>
-      </Modal>
+      
     </footer>
   );
 };
