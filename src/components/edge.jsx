@@ -7,28 +7,29 @@ import { useNavigate } from "react-router-dom";
 
 function EdgeSection() {
   const navigate = useNavigate();
+
   const handleSubmit2 = async (e) => {
     e.preventDefault();
-    console.log("Form submit triggered ✅");
 
     const formData = new FormData(e.target);
     const payload = {
       name: formData.get("name")?.trim(),
       phone: formData.get("phone")?.trim(),
       email: formData.get("email")?.trim(),
+      enquiryType: formData.get("enquiryType"),
     };
-
-    console.log("Payload:", payload);
 
     // Validation
     if (!payload.name) {
       alert("Please enter your name");
       return;
     }
+
     if (!/^[0-9]{10}$/.test(payload.phone)) {
       alert("Please enter a valid 10-digit phone number");
       return;
     }
+
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(payload.email)) {
       alert("Please enter a valid email address");
       return;
@@ -37,61 +38,27 @@ function EdgeSection() {
     try {
       const response = await fetch("https://chainandlinks.com/sendmail.php", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
 
       const result = await response.text();
       console.log("Server response:", result);
+
       if (response.ok) {
-      // ✅
-      navigate("/varam/thank-you", { state: { submitted: true } });
-      e.target.reset();
-    }
+        e.target.reset();
+        navigate("/varam/thank-you", { state: { submitted: true } });
+      }
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("Something went wrong, please try again.");
       e.target.reset();
     }
-
   };
 
   return (
     <section id="edge" className="edge-section">
       <div className="container">
-        {/* <div
-          class="row key-facts"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="300"
-        >
-          <div class="col-3 col-md-3 p-0">
-            <div class="key-fact-item item-1">
-              <h3>32</h3>
-              <p>Acres</p>
-            </div>
-          </div>
-          <div class="col-3 col-md-3 p-0">
-            <div class="key-fact-item">
-              <h3>600-2,400</h3>
-              <p>Sq.Ft</p>
-            </div>
-          </div>
-          <div class="col-3 col-md-3 p-0">
-            <div class="key-fact-item">
-              <h3>550</h3>
-              <p>Villa Plots</p>
-            </div>
-          </div>
-          <div class="col-3 col-md-3 p-0">
-            <div class="key-fact-item item-4">
-              <h3>18,000 Sq.Ft</h3>
-              <p>Clubhouse</p>
-            </div>
-          </div>
-        </div> */}
         <div className="row contact-section">
           <h2
             className="section-title-normal text-center mt-5"
@@ -100,44 +67,67 @@ function EdgeSection() {
           >
             Enquire Now
           </h2>
-          <p className="text-center" data-aos="fade-left" data-aos-duration="1000">
-           Get in touch for more information
+          <p
+            className="text-center"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            Get in touch for more information
           </p>
           <form onSubmit={handleSubmit2}>
-            <div
-              className="row m-0 mt-2 mt-lg-5"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <div className="col-12 mb-2 mb-lg-0 col-lg-3">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Enter Name"
-                  required
-                />
-              </div>
-              <div className="col-12 mb-2 mb-lg-0 col-lg-3">
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="Enter Phone Number"
-                  required
-                />
-              </div>
-              <div className="col-12 mb-2 mb-lg-0 col-lg-3">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Enter Email"
-                  required
-                />
-              </div>
-              <div className="col-12 mb-2 mb-lg-0 col-lg-3">
-                <button type="submit">Book a Free Site Visit</button>
-              </div>
-            </div>
-          </form>
+  <div className="row g-2 g-lg-3 mt-2 mt-lg-5">
+
+    <div className="col-12 col-sm-6 col-lg-2">
+      <input
+        type="text"
+        name="name"
+        className="enquiry-field"
+        placeholder="Enter Name"
+        required
+      />
+    </div>
+
+    <div className="col-12 col-sm-6 col-lg-2">
+      <input
+        type="tel"
+        name="phone"
+        className="enquiry-field"
+        placeholder="Enter Phone Number"
+        required
+      />
+    </div>
+
+    <div className="col-12 col-sm-6 col-lg-2">
+      <input
+        type="email"
+        name="email"
+        className="enquiry-field"
+        placeholder="Enter Email"
+        required
+      />
+    </div>
+
+    <div className="col-12 col-sm-6 col-lg-2">
+      <select
+        name="enquiryType"
+        className="enquiry-field enquiry-select"
+        required
+      >
+        <option disabled value="">Select Enquiry</option>
+        <option value="villa">Villa</option>
+        <option value="Plot">Plot</option>
+      </select>
+    </div>
+
+    <div className="col-12 col-lg-3">
+      <button className="enquiry-btn" type="submit">
+        Book a Free Site Visit
+      </button>
+    </div>
+
+  </div>
+</form>
+
         </div>
         <div className="row align-items-center edge-row">
           {/* Left Image Cards - Updated Structure */}

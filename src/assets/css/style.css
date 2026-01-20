@@ -606,12 +606,26 @@ font-family: "Playfair Display", serif;
   border-radius: 10px;
   border: 2px solid var(--header-title);
 }
+.contact-section input,
+.contact-section select {
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: 2px solid var(--header-title);
+  background-color: #fff;
+}
 
 .contact-section input:focus,
 .contact-section select:focus {
   border: 1px solid grey;
   outline: none;
   /* optional: remove default blue outline */
+}
+
+.contact-section input:focus,
+.contact-section select:focus {
+  border: 1px solid grey;
+  outline: none;
 }
 
 .contact-section button {
@@ -1719,8 +1733,7 @@ font-family: "Playfair Display", serif;
   font-weight: normal;
   color: #aa8453;
   line-height: 30px;
-  content: "\e61a";
-  font-family: "Themify";
+  content: "🠋";
   transition: all 500ms ease;
 }
 .accordion-box .block .acc-btn.active {
@@ -1728,8 +1741,7 @@ font-family: "Playfair Display", serif;
   color: #aa8453;
 }
 .accordion-box .block .acc-btn.active:before {
-  color: "Themify";
-  content: "\e622";
+  content: "🠉";
 }
 .accordion-box .block .acc-content {
   position: relative;
@@ -1754,3 +1766,9 @@ font-family: "Playfair Display", serif;
   display: block;
 }
 
+
+
+.villa-card {
+  --bs-card-bg: #ffe6e5d9 !important;
+  border: none;
+}

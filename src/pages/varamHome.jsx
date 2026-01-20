@@ -3,8 +3,10 @@ import { useEffect } from "react";
 import Navbar from "../components/navbar";
 import Hero from "../components/home-banner";
 import EdgeSection from "../components/edge";
+import Edge2 from "../components/edge3";
 import Amenities from "../components/amenities";
 import Highlights from "../components/highlights";
+import VillaHighlights from "../components/villa-highlights";
 import ProximitySection from "../components/proximity";
 import GallerySection from "../components/gallery";
 import Layout from "../components/layout";
@@ -41,8 +43,10 @@ function VaramHome() {
       <Navbar />
       <Hero />
       <EdgeSection/>
+      <Edge2/>
       <Amenities/>
       <Highlights/>
+      <VillaHighlights/>
       <ProximitySection/>
       <Layout/>
       <GallerySection/>

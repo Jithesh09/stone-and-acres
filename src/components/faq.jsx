@@ -109,6 +109,42 @@ const Layout = () => {
                   </div>
                 )}
               </li>
+              <li
+                className={`accordion block ${
+                  activeIndex === 5 ? "active" : ""
+                }`}
+              >
+                <div className="acc-btn" onClick={() => toggleAccordion(5)}>
+                  6. Are villas in Padappai affordable compared to other areas in Chennai?
+                </div>
+                {activeIndex === 5 && (
+                  <div className="acc-content">
+                    <div className="content">
+                      <div className="text">
+                        Yes. Villas in Padappai are more affordable than many prime Chennai locations while still offering excellent connectivity and infrastructure growth. This makes Padappai one of the best options for buyers seeking budget-friendly villas in Chennai with high growth potential.
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </li>
+              <li
+                className={`accordion block ${
+                  activeIndex === 6 ? "active" : ""
+                }`}
+              >
+                <div className="acc-btn" onClick={() => toggleAccordion(6)}>
+                  7. Why should I invest in villas for sale in Chennai?
+                </div>
+                {activeIndex === 6 && (
+                  <div className="acc-content">
+                    <div className="content">
+                      <div className="text">
+                        Chennai offers strong infrastructure, steady property appreciation, and excellent connectivity. Villas for sale in Chennai provide privacy, spacious living, and long-term value, making them ideal for families and end-users.
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </li>
             </ul>
           </div>
         </div>
