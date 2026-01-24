@@ -114,8 +114,8 @@ function EdgeSection() {
         required
       >
         <option disabled value="">Select Enquiry</option>
-        <option value="villa">Villa</option>
-        <option value="Plot">Plot</option>
+        <option value="villa">For Villa</option>
+        <option value="Plot">For Plot</option>
       </select>
     </div>
 
