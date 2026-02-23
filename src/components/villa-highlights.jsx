@@ -3,7 +3,7 @@ import React from "react";
 const VillaTypes = () => {
   const villas = [
     {
-      title: "🏡 2 BHK Villa",
+      title: "2 BHK Villa",
       land: "600 sq.ft",
       built: "900 sq.ft",
       description: [
@@ -12,7 +12,7 @@ const VillaTypes = () => {
       ],
     },
     {
-      title: "🏡 2.5 BHK Villa",
+      title: "2.5 BHK Villa",
       land: "1000 sq.ft",
       built: "1200 sq.ft",
       description: [
@@ -21,7 +21,7 @@ const VillaTypes = () => {
       ],
     },
     {
-      title: "🏡 3 BHK Villa",
+      title: "3 BHK Villa",
       land: "1200 sq.ft",
       built: "1500 sq.ft",
       description: [
@@ -55,7 +55,7 @@ const VillaTypes = () => {
                 data-aos-delay="100"
               >
                 <div className="card-body">
-                  <h4 className="card-title mb-3">{villa.title}</h4>
+                  <h4 className="card-title mb-3">{villa.title}</h4> 
 
                   <div className="row mb-3">
                     <div className="col-md-6 col-12">
@@ -63,7 +63,8 @@ const VillaTypes = () => {
                         <strong>Land Extent:</strong> {villa.land}
                       </p>
                     </div>
-                    <div className="col-md-6 col-12">
+                    
+                     <div className="col-md-6 col-12">
                       <p className="mb-1">
                         <strong>Built-Up Area:</strong> {villa.built}
                       </p>

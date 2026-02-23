@@ -97,7 +97,7 @@ function EdgeSection() {
             <h1 className="edge-title mt-5" data-aos="fade-up">
               Best Villas in Padappai
             </h1>
-            <p className="edge-description-pon" data-aos="fade-up">
+            <p className="edge-description" data-aos="fade-up">
               Varam offers thoughtfully planned 2 & 3 BHK villas in Padappai,
               designed for modern families who value comfort, privacy, and
               connectivity. Set within a vibrant gated community, these villas
