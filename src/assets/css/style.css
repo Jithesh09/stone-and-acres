@@ -133,10 +133,10 @@ body {
   background: linear-gradient(135deg,
       var(--primary-color) 0%,
       var(--border-color) 100%);
-  background-image: url("../../../src/assets/images/banner/varamHero2.jpeg");
+  background-image: url("../../../src/assets/images/banner/varamHero3.jpeg");
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  /* background-position: center;
+  background-attachment: fixed; */
   z-index: -2;
 }
 
@@ -165,7 +165,7 @@ body {
 
 @media screen and (max-width:768px) {
   .hero-background {
-    background-image: url("../../../src/assets/images/banner/varamheroMobile2.jpeg");
+    background-image: url("../../../src/assets/images/banner/varamheroMobile3.jpeg");
     background-attachment: local;
   }
 }
