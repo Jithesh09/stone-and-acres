@@ -115,7 +115,8 @@ body {
 ========================================================= */
 .hero-section {
   width: 100%;
-  min-height: calc(100vh - 67px);
+  height: calc(100vh - 67px);
+  min-height: 500px;
   position: relative;
   display: flex;
   align-items: center;
@@ -134,7 +135,7 @@ body {
   background-image: url("../../../src/assets/images/banner/varam-desktop.jpeg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100% 100%;
+  background-size: cover;
 
   z-index: -2;
 }
