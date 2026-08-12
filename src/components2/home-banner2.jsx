@@ -2,8 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import mainBannner from "../assets/images/banner/Untitled-2.jpeg";
-import MobileBanner from "../assets/images/banner/Untitled-3.jpeg";
+import mainBannner from "../assets/images/banner/amber-mobile.jpeg";
+import MobileBanner from "../assets/images/banner/amber-desktop.jpeg";
 import { ToastContainer,toast } from "react-toastify";
 function Hero() {
   const [formData, setFormData] = useState({
